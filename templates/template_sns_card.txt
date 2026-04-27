@@ -8,4 +8,5 @@
 | RepostNum = {{ data.RepostNum }}
 | FavorNum = {{ data.FavorNum }}
 | Server = Jp
+| PostID = {{ data.Id }}
 {% raw %}}}{% endraw %}
