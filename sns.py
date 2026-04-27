@@ -79,7 +79,7 @@ class classSNSPostData:
         for imagePath in originalData['PostImagePath']:
             if not imagePath.startswith("UIs/01_Common/49_SNS/SNSPostImg/"):
                 raise ValueError("Can't reconize Path in PostImagePath! It's value is:" + imagePath);
-            self.ImageIDs.append(imagePath[33:])
+            self.ImageIDs.append(imagePath[32:])
         # Repost Num in-game increases based on time, at the maximum of RepostMaxNum; same for FavorNum.
         self.RepostNum = originalData['RepostMaxNum'];
         self.FavorNum = originalData['FavorMaxNum'];
@@ -119,7 +119,7 @@ def getSNSUnlockCondition(List, ScenarioIDs_Stories):
                 ConditionList.add("S2V_EX_C{0}E{1}".format(story["ChapterId"],story["EpisodeId"]));
             else:
                 ConditionList.add("S2V{0}C{1}E{2}".format(story["VolumeId"] - 1,story["ChapterId"],story["EpisodeId"]));
-    return "&".join(ConditionList);
+    return "/".join(ConditionList);
 
 
 def init_data():
