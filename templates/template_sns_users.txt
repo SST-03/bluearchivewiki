@@ -1,0 +1,11 @@
+return {% raw %}{{% endraw %}
+{% for id, data in SNSProfileData.items() -%}
+[{{ data.ID }}] = {% raw %}{{% endraw %}
+ImageID = {{ data.ImageID }},
+Namejp = "{{ data.Namejp }}",
+Idjp = "{{ data.Idjp }}",{% if data.NameGlobal != "" %}
+NameGlobal = "{{ data.NameGlobal }}",{%endif%}{% if data.IdGlobal != "" %}
+IdGlobal = "{{ data.IdGlobal }}"{%endif%}
+{% raw %}},{% endraw %}
+{% endfor %}
+{% raw %}}{% endraw %};
