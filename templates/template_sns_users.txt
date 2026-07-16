@@ -1,7 +1,8 @@
 return {% raw %}{{% endraw %}
 {% for id, data in SNSProfileData.items() -%}
 [{{ data.ID }}] = {% raw %}{{% endraw %}
-ImageID = {{ data.ImageID }},
+ImageID = {{ data.ImageID }},{% if data.isOfficial == true %}
+isOfficial = true,{%endif%}
 Namejp = "{{ data.Namejp }}",
 Idjp = "{{ data.Idjp }}",{% if data.NameGlobal != "" %}
 NameGlobal = "{{ data.NameGlobal }}",{%endif%}{% if data.IdGlobal != "" %}

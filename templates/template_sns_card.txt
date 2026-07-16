@@ -1,7 +1,8 @@
 {% raw %}{{SNSCard{% endraw %}
 | PosterId = {{ data.PosterId }}{% if data.ReposterId != 0 %}
-| ReposterId = {{ data.ReposterId }}{%endif%}{% if data.ReplyPostId != 0 %}
-| isReply = true{%endif%}
+| ReposterId = {{ data.ReposterId }}{%endif%}{% if data.ReplyDepth != 0 %}
+| isReply = true
+| ReplyDepth = {{ data.ReplyDepth }}{%endif%}
 | Text = {{ data.PostText }}{% if images != "" %}
 | ImageIDs = {{ images }} {%endif%}
 | UnlockBy = {{ data.UnlockCondition_wikitext }}

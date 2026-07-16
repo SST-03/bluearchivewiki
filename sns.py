@@ -23,16 +23,18 @@ PAGE_NAME_SNS_CHARACTER_LIST = "Module:SNS/CharacterList"
 class classSNSProfileData:
     #ID = -1;
     #ImageID = -1;
+    #isOfficial = false
     #Namejp = "";
     #Idjp = "";
     #NameGlobal = "";
     #IdGlobal = "";
-    def __init__ (self, id, ProfileImagePath, NameLocalizeKey, IdLocalizeKey):
+    def __init__ (self, id, isOfficial, ProfileImagePath, NameLocalizeKey, IdLocalizeKey):
         global data;
         self.ID = id;
         if not ProfileImagePath.startswith("UIs/01_Common/49_SNS/SNSProfile/SNS_Profile_Icon_"):
             raise ValueError("Can't reconize ProfileImagePath! It's value is:" + ProfileImagePath);
         self.ImageID = int(ProfileImagePath[50:])
+        self.isOfficial = isOfficial;
 
         if NameLocalizeKey in data.localization:
             NameDict = data.localization[NameLocalizeKey];
@@ -92,9 +94,10 @@ class classSNSPostData:
     def addReply (self, data):
         self.Replys.append(data);
 
-    def toWikitext (self):
+    def toWikitext (self, i):
         env = Environment(loader=FileSystemLoader(os.path.dirname(__file__)))
         template = env.get_template('templates/template_sns_card.txt')
+        self.ReplyDepth = i;
         wikitext = template.render(data = self, images = "&".join(self.ImageIDs))
         replys = []
         #print(self.Id)
@@ -102,7 +105,7 @@ class classSNSPostData:
             #print(self.Id, reply.Id, len(self.Replys))
             if reply.Id == self.Id:
                 raise ValueError(str(self.Id) + "WTF??? " + str(reply.Id));
-            replys.append(reply.toWikitext());
+            replys.append(reply.toWikitext(i + 1));
         return wikitext + "".join(replys);
 
 
@@ -159,7 +162,7 @@ def init_data():
     #SNSProfileExcelTable_Global = load_file_grouped(args['data_secondary'], "SNSProfileExcelTable");
 
     for item in SNSProfileExcelTable_jp:
-        SNSProfileData[item['Id']] = classSNSProfileData(item['Id'], item['ProfileImagePath'], item['NameLocalizeKey'], item['IdLocalizeKey'])
+        SNSProfileData[item['Id']] = classSNSProfileData(item['Id'], item['MarkIconVisible'], item['ProfileImagePath'], item['NameLocalizeKey'], item['IdLocalizeKey'])
 
     SNSPostData = {};
     with open(os.path.join(args['data_primary'], 'DB', "SNSPostExcelTable.json"),encoding="utf8") as f:
@@ -182,7 +185,7 @@ def generate():
     for id, data in SNSPostData.items():
         # print(id, data.Id, "A")
         if data.ReplyPostId == 0:
-            SNSWikitexts_jp.append(data.toWikitext());
+            SNSWikitexts_jp.append(data.toWikitext(0));
 
     template = env.get_template('templates/page_sns.txt', None)
     wikitext = template.render(SNSWikitexts_jp = SNSWikitexts_jp);
@@ -214,7 +217,7 @@ def main():
     parser.add_argument('-data_secondary',  metavar='DIR', default='../ba-data/global', help='Secondary (Global) version data')
     parser.add_argument('-translation',     metavar='DIR', default='../bluearchivewiki/translation', help='Additional translations directory')
     parser.add_argument('-outdir',          metavar='DIR', default='out', help='Output directory')
-    parser.add_argument('-wiki', nargs=2, metavar=('LOGIN', 'PASSWORD'), help='Publish data to wiki, requires wiki_template to be set')
+    parser.add_argument('-wiki', nargs=2, metavar=('LOGIN', 'PASSWORD'), help='Publish data to wiki')
     #parser.add_argument('-assets_dir',     metavar='DIR', default='C:/blue_archive_data/datamine/blue_archive/ui_textures', help='Directory with exported assets')
     # TODO: Automation of Export SNS Image
 
