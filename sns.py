@@ -17,7 +17,8 @@ from shared.MissingTranslations import MissingTranslations
 
 from collections import defaultdict
 
-PAGE_NAME_SNS_POSTS = "FruLink/Posts"
+PAGE_NAME_SNS_POSTS_jp = "FruLink/Posts/jp"
+PAGE_NAME_SNS_POSTS_global = "FruLink/Posts/en"
 PAGE_NAME_SNS_CHARACTER_LIST = "Module:SNS/CharacterList"
 
 class classSNSProfileData:
@@ -152,50 +153,58 @@ def init_data():
         SNSPostUnlockData[id] = getSNSUnlockCondition(List, ScenarioIDs_Stories);
 
     # Step 2: init Profile/Post Data
-    global SNSProfileData, SNSPostData;
+    global SNSProfileData, SNSPostData_jp, SNSPostData_global;
     SNSProfileData = {};
 
     with open(os.path.join(args['data_primary'], 'DB', "SNSProfileExcelTable.json"),encoding="utf8") as f:
         SNSProfileExcelTable_jp = orjson.loads(f.read())['DataList']
 
-    # Is this really needed?
-    #SNSProfileExcelTable_Global = load_file_grouped(args['data_secondary'], "SNSProfileExcelTable");
-
     for item in SNSProfileExcelTable_jp:
         SNSProfileData[item['Id']] = classSNSProfileData(item['Id'], item['MarkIconVisible'], item['ProfileImagePath'], item['NameLocalizeKey'], item['IdLocalizeKey'])
 
-    SNSPostData = {};
+    SNSPostData_jp = {};
     with open(os.path.join(args['data_primary'], 'DB', "SNSPostExcelTable.json"),encoding="utf8") as f:
         SNSPostExcelTable_jp = orjson.loads(f.read())['DataList'];
     for item in SNSPostExcelTable_jp:
-        SNSPostData[item["Id"]] = classSNSPostData(item, 'Jp')
+        SNSPostData_jp[item["Id"]] = classSNSPostData(item, 'Jp')
 
-    for id, data in SNSPostData.items():
-        if data.ReplyPostId != 0:
-            # print(data.ReplyPostId, data.Id)
-            SNSPostData[data.ReplyPostId].addReply(data);
-            # print (SNSPostData[data.ReplyPostId].Id)
+    for id, _data in SNSPostData_jp.items():
+        if _data.ReplyPostId != 0:
+            SNSPostData_jp[_data.ReplyPostId].addReply(_data);
+
+    SNSPostData_global = {};
+    with open(os.path.join(args['data_secondary'], 'DB', "SNSPostExcelTable.json"),encoding="utf8") as f:
+        SNSPostExcelTable_global = orjson.loads(f.read())['DataList'];
+    for item in SNSPostExcelTable_global:
+        SNSPostData_global[item["Id"]] = classSNSPostData(item, 'En')
+
+    for id, _data in SNSPostData_global.items():
+        if _data.ReplyPostId != 0:
+            SNSPostData_global[_data.ReplyPostId].addReply(_data);
     
+
+def generate_by_server(env, DATA, page, fileName):
+    SNSWikitexts = [];
+    for id, _data in DATA.items():
+        if _data.ReplyPostId == 0:
+            SNSWikitexts.append(_data.toWikitext(0));
+
+    template = env.get_template('templates/page_sns.txt', None)
+    wikitext = template.render(SNSWikitexts = SNSWikitexts);
+
+    with open(os.path.join(args['outdir'], fileName), 'w', encoding="utf8") as f:
+        f.write(wikitext)
+    if wiki.site != None:
+        print(f"Publishing {page}")
+        wiki.publish(page, wikitext, f"Updated {page} page")
 
 def generate():
     env = Environment(loader=FileSystemLoader(os.path.dirname(__file__)))
-    global SNSProfileData, SNSPostData;
+    global SNSProfileData, SNSPostData_jp, SNSPostData_global;
 
-    SNSWikitexts_jp = [];
-    for id, data in SNSPostData.items():
-        # print(id, data.Id, "A")
-        if data.ReplyPostId == 0:
-            SNSWikitexts_jp.append(data.toWikitext(0));
+    generate_by_server(env, SNSPostData_jp, PAGE_NAME_SNS_POSTS_jp, "page_sns_jp.txt")
+    generate_by_server(env, SNSPostData_global, PAGE_NAME_SNS_POSTS_global, "page_sns_en.txt")
 
-    template = env.get_template('templates/page_sns.txt', None)
-    wikitext = template.render(SNSWikitexts_jp = SNSWikitexts_jp);
-
-    with open(os.path.join(args['outdir'], 'page_sns.txt'), 'w', encoding="utf8") as f:
-        f.write(wikitext)
-    if wiki.site != None:
-        print(f"Publishing {PAGE_NAME_SNS_POSTS}")
-        wiki.publish(PAGE_NAME_SNS_POSTS, wikitext, f"Updated {PAGE_NAME_SNS_POSTS} page")
-    
     template = env.get_template('templates/template_sns_users.txt', None)
     wikitext = template.render(SNSProfileData = SNSProfileData);
 

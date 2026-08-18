@@ -1,9 +1,5 @@
-<tabber>
-|-| Japanese=
 {% raw %}{{SNSList{% endraw %}
-{% for data in SNSWikitexts_jp -%}
+{% for data in SNSWikitexts -%}
 |{{ data }}
 {% endfor %}
 {% raw %}}}{% endraw %}
-|-| English (Global)=
-</tabber>
