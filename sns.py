@@ -95,18 +95,18 @@ class classSNSPostData:
     def addReply (self, data):
         self.Replys.append(data);
 
-    def toWikitext (self, i):
+    def toWikitext (self, i, server):
         env = Environment(loader=FileSystemLoader(os.path.dirname(__file__)))
         template = env.get_template('templates/template_sns_card.txt')
         self.ReplyDepth = i;
-        wikitext = template.render(data = self, images = "&".join(self.ImageIDs))
+        wikitext = template.render(data = self, images = "&".join(self.ImageIDs), server = server)
         replys = []
         #print(self.Id)
         for reply in self.Replys:
             #print(self.Id, reply.Id, len(self.Replys))
             if reply.Id == self.Id:
                 raise ValueError(str(self.Id) + "WTF??? " + str(reply.Id));
-            replys.append(reply.toWikitext(i + 1));
+            replys.append(reply.toWikitext(i + 1, server));
         return wikitext + "".join(replys);
 
 
@@ -183,11 +183,11 @@ def init_data():
             SNSPostData_global[_data.ReplyPostId].addReply(_data);
     
 
-def generate_by_server(env, DATA, page, fileName):
+def generate_by_server(env, DATA, page, fileName, server):
     SNSWikitexts = [];
     for id, _data in DATA.items():
         if _data.ReplyPostId == 0:
-            SNSWikitexts.append(_data.toWikitext(0));
+            SNSWikitexts.append(_data.toWikitext(0, server));
 
     template = env.get_template('templates/page_sns.txt', None)
     wikitext = template.render(SNSWikitexts = SNSWikitexts);
@@ -202,8 +202,8 @@ def generate():
     env = Environment(loader=FileSystemLoader(os.path.dirname(__file__)))
     global SNSProfileData, SNSPostData_jp, SNSPostData_global;
 
-    generate_by_server(env, SNSPostData_jp, PAGE_NAME_SNS_POSTS_jp, "page_sns_jp.txt")
-    generate_by_server(env, SNSPostData_global, PAGE_NAME_SNS_POSTS_global, "page_sns_en.txt")
+    generate_by_server(env, SNSPostData_jp, PAGE_NAME_SNS_POSTS_jp, "page_sns_jp.txt", "Jp")
+    generate_by_server(env, SNSPostData_global, PAGE_NAME_SNS_POSTS_global, "page_sns_en.txt", "En")
 
     template = env.get_template('templates/template_sns_users.txt', None)
     wikitext = template.render(SNSProfileData = SNSProfileData);

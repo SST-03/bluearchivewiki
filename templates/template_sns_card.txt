@@ -8,6 +8,6 @@
 | UnlockBy = {{ data.UnlockCondition_wikitext }}
 | RepostNum = {{ data.RepostNum }}
 | FavorNum = {{ data.FavorNum }}
-| Server = Jp
+| Server = {{ server }}
 | PostID = {{ data.Id }}
 {% raw %}}}{% endraw %}
