@@ -14,7 +14,7 @@ import shared.functions
 
 from data import load_data, load_season_data
 from model import Item, Character
-from classes.Stage import WeekDungeonStage
+from classes.Stage import WeekDungeonStage, WeekDungeonFindGiftStage
 from classes.Furniture import Furniture, FurnitureGroup
 from classes.Gacha import GachaGroup, GachaElement
 from classes.RewardParcel import RewardParcel
@@ -25,11 +25,16 @@ missing_localization = MissingTranslations("translation/missing/LocalizeExcelTab
 missing_code_localization = MissingTranslations("translation/missing/LocalizeCodeExcelTable.json")
 missing_etc_localization = MissingTranslations("translation/missing/LocalizeEtcExcelTable.json")
 
+#The location each dungeon type is called by on the wiki. Only the bounty hunts (Chaser*) go by the
+#name the game gives them; Blood is Base Defense and FindGift is Item Retrieval in the game data.
+#ChaserD and ChaserE have no Global name yet, so theirs follow the Korean 파괴된 도로 and 고저택.
 DUNGEON_TYPES = {
     "Blood": "Ruined Munitions Factory",
     "ChaserA": "Overpass",
     "ChaserB": "Desert Railroad",
     "ChaserC": "Classroom",
+    "ChaserD": "Destroyed Road",
+    "ChaserE": "Old Mansion",
     "FindGift": "Slumpia Square",
 }
 
@@ -66,7 +71,8 @@ def generate():
         for stage in data.week_dungeon.values():
             if stage['WeekDungeonType'] != dungeon_type:
                 continue
-            stage = WeekDungeonStage.from_data(stage['StageId'], data, wiki_card=wiki_card)
+            if stage['WeekDungeonType'] == 'FindGift': stage = WeekDungeonFindGiftStage.from_data(stage['StageId'], data, wiki_card=wiki_card)
+            else: stage = WeekDungeonStage.from_data(stage['StageId'], data, wiki_card=wiki_card)
             stages[dungeon_type].append(stage)
 
 
@@ -75,11 +81,21 @@ def generate():
     env.filters['environment_type'] = shared.functions.environment_type
     env.filters['damage_type'] = shared.functions.damage_type
     env.filters['armor_type'] = shared.functions.armor_type
-    env.filters['thousands'] = shared.functions.format_thousands
-    template = env.get_template('templates/template_week_dungeon.txt')
+    env.filters['thousands'] = shared.functions.format_thousands    
 
     for dungeon_type in week_dungeon_types:
-        wikitext = template.render(stages=stages[dungeon_type], dungeon_type=DUNGEON_TYPES.get(dungeon_type, dungeon_type) )
+        if dungeon_type == 'FindGift':
+            template = env.get_template('templates/template_week_dungeon_findgift.txt')
+        else:
+            template = env.get_template('templates/template_week_dungeon.txt')
+
+        #The school bonus and the oopart families are the same on every stage of a dungeon type
+        wikitext = template.render(
+            stages=stages[dungeon_type],
+            dungeon_type=DUNGEON_TYPES.get(dungeon_type, dungeon_type),
+            schools=stages[dungeon_type][0].schools,
+            ooparts=stages[dungeon_type][0].ooparts,
+        )
         with open(os.path.join(args['outdir'], 'week_dungeon', f'{dungeon_type}.txt'), 'w', encoding="utf8") as f:
             f.write(wikitext)
             f.close()

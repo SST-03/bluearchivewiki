@@ -993,7 +993,7 @@
         {
             "Id": 175,
             "ArtistEn": "Aiobahn",
-            "ArtistNote":"[https://twitter.com/aiobahn/status/1716289418137616422]",
+            "ArtistNote": "[https://twitter.com/aiobahn/status/1716289418137616422]",
             "ArtistTrack": 0,
             "NameEn": "HIGH-VELOCITY"
         },
@@ -1016,16 +1016,16 @@
             "NameEn": "Tsukikage"
         },
         {
-            "Id": 180,
-            "ArtistEn": "Mitsukiyo",
-            "ArtistTrack": 0,
-            "NameEn": "彩りキャンバス"
-        },
-        {
             "Id": 179,
             "ArtistEn": "Mitsukiyo, Hina (CV: Hirohashi Ryō)",
             "ArtistTrack": 0,
             "NameEn": "夢路の花"
+        },
+        {
+            "Id": 180,
+            "ArtistEn": "Mitsukiyo",
+            "ArtistTrack": 0,
+            "NameEn": "彩りキャンバス"
         },
         {
             "Id": 181,
@@ -1098,7 +1098,7 @@
         {
             "Id": 194,
             "ArtistEn": "7mai",
-            "ArtistNote":"[https://twitter.com/7657mai/status/1815044472692191294]",
+            "ArtistNote": "[https://twitter.com/7657mai/status/1815044472692191294]",
             "ArtistTrack": 0,
             "NameEn": "Ridiculous"
         },
@@ -1182,6 +1182,12 @@
             "NameEn": "Shoujo Delight"
         },
         {
+            "Id": 209,
+            "ArtistEn": "Mitsukiyo",
+            "ArtistTrack": 0,
+            "NameEn": "Sometimes I Cry"
+        },
+        {
             "Id": 210,
             "ArtistEn": "KARUT",
             "ArtistTrack": 0,
@@ -1199,7 +1205,7 @@
             "ArtistTrack": 0,
             "NameEn": "OHAYOU Daily morning"
         },
-                {
+        {
             "Id": 215,
             "ArtistEn": "Nor",
             "ArtistTrack": 0,
@@ -1247,7 +1253,7 @@
             "ArtistTrack": 0,
             "NameEn": "Candy Step"
         },
-                {
+        {
             "Id": 223,
             "ArtistEn": "Ariuei",
             "ArtistTrack": 0,
@@ -1272,6 +1278,12 @@
             "NameEn": "Tremendous Celebration"
         },
         {
+            "Id": 227,
+            "ArtistEn": "KARUT",
+            "ArtistTrack": 0,
+            "NameEn": "Encountered"
+        },
+        {
             "Id": 228,
             "ArtistEn": "Mitsukiyo",
             "ArtistTrack": 0,
@@ -1284,8 +1296,14 @@
             "NameEn": "Sudden Onset Disaster"
         },
         {
+            "Id": 230,
+            "ArtistEn": "EmoCosine",
+            "ArtistTrack": 0,
+            "NameEn": "Succession"
+        },
+        {
             "Id": 231,
-            "ArtistEn": "",
+            "ArtistEn": "EmoCosine",
             "ArtistTrack": 0,
             "NameEn": "Oukaranman"
         },
@@ -1391,7 +1409,7 @@
             "ArtistTrack": 0,
             "NameEn": "WE'RE CCC"
         },
-         {
+        {
             "Id": 254,
             "ArtistEn": "",
             "ArtistTrack": 0,
@@ -1434,6 +1452,12 @@
             "NameEn": "Breaking Silence"
         },
         {
+            "Id": 265,
+            "ArtistEn": "Mitsukiyo",
+            "ArtistTrack": 0,
+            "NameEn": ""
+        },
+        {
             "Id": 268,
             "ArtistEn": "EmoCosine",
             "ArtistTrack": 0,
@@ -1446,10 +1470,28 @@
             "NameEn": "Last Station"
         },
         {
+            "Id": 280,
+            "ArtistEn": "EmoCosine",
+            "ArtistTrack": 0,
+            "NameEn": "Lonely Flower"
+        },
+        {
             "Id": 281,
-            "ArtistEn": "",
+            "ArtistEn": "KARUT",
             "ArtistTrack": 0,
             "NameEn": "Laboratorium Occultum"
+        },
+        {
+            "Id": 283,
+            "ArtistEn": "Mitsukiyo",
+            "ArtistTrack": 0,
+            "NameEn": "4You (Harmonica Arrange)"
+        },
+        {
+            "Id": 289,
+            "ArtistEn": "EmoCosine",
+            "ArtistTrack": 0,
+            "NameEn": "Summer Survival!"
         },
         {
             "Id": 291,
@@ -1458,8 +1500,14 @@
             "NameEn": "Shining Seaside"
         },
         {
+            "Id": 295,
+            "ArtistEn": "EmoCosine",
+            "ArtistTrack": 0,
+            "NameEn": ""
+        },
+        {
             "Id": 296,
-            "ArtistEn": "",
+            "ArtistEn": "Mitsukiyo",
             "ArtistTrack": 0,
             "NameEn": "Wachawacha Rush"
         },
@@ -1471,10 +1519,190 @@
             "NameEn": "You're My Princess"
         },
         {
+            "Id": 299,
+            "ArtistEn": "KARUT",
+            "ArtistTrack": 0,
+            "NameEn": "Driving 2 U"
+        },
+        {
+            "Id": 300,
+            "ArtistEn": "KARUT",
+            "ArtistTrack": 0,
+            "NameEn": "Floating Floatie"
+        },
+        {
+            "Id": 302,
+            "ArtistEn": "KARUT",
+            "ArtistTrack": 0,
+            "NameEn": "Someday Certainly (inst arrange)"
+        },
+        {
+            "Id": 308,
+            "ArtistEn": "Mitsukiyo",
+            "ArtistTrack": 0,
+            "NameEn": "Brave Time"
+        },
+        {
+            "Id": 309,
+            "ArtistEn": "EmoCosine",
+            "ArtistTrack": 0,
+            "NameEn": ""
+        },
+        {
+            "Id": 311,
+            "ArtistEn": "KARUT",
+            "ArtistTrack": 0,
+            "NameEn": "Deus ex Decagrammaton"
+        },
+        {
+            "Id": 317,
+            "ArtistEn": "KARUT",
+            "ArtistTrack": 0,
+            "NameEn": "OTKMARCHING!"
+        },
+        {
             "Id": 318,
             "ArtistEn": "EmoCosine",
             "ArtistTrack": 0,
             "NameEn": "Run Way My Way"
+        },
+        {
+            "Id": 319,
+            "ArtistEn": "KARUT",
+            "ArtistTrack": 0,
+            "NameEn": "Redacted Rhapsody No.1"
+        },
+        {
+            "Id": 321,
+            "ArtistEn": "EmoCosine",
+            "ArtistTrack": 0,
+            "NameEn": "Fox Dens"
+        },
+        {
+            "Id": 322,
+            "ArtistEn": "",
+            "ArtistTrack": 0,
+            "NameEn": "Jimejime Sururu"
+        },
+        {
+            "Id": 323,
+            "ArtistEn": "KARUT",
+            "ArtistTrack": 0,
+            "NameEn": "Megiddo Flame"
+        },
+        {
+            "Id": 324,
+            "ArtistEn": "EmoCosine",
+            "ArtistTrack": 0,
+            "NameEn": "Replica"
+        },
+        {
+            "Id": 330,
+            "ArtistEn": "Mitsukiyo",
+            "ArtistTrack": 0,
+            "NameEn": "Steel Horizon"
+        },
+        {
+            "Id": 332,
+            "ArtistEn": "Mitsukiyo",
+            "ArtistTrack": 0,
+            "NameEn": ""
+        },
+        {
+            "Id": 333,
+            "ArtistEn": "Mitsukiyo",
+            "ArtistTrack": 0,
+            "NameEn": ""
+        },
+        {
+            "Id": 334,
+            "ArtistEn": "KARUT",
+            "ArtistTrack": 0,
+            "NameEn": "The Tsuchinoko is Out There"
+        },
+        {
+            "Id": 337,
+            "ArtistEn": "KARUT",
+            "ArtistTrack": 0,
+            "NameEn": "Step by Step (Night Arrange)"
+        },
+        {
+            "Id": 338,
+            "ArtistEn": "KARUT",
+            "ArtistTrack": 0,
+            "NameEn": ""
+        },
+        {
+            "Id": 340,
+            "ArtistEn": "Mitsukiyo",
+            "ArtistTrack": 0,
+            "NameEn": "Otomegokoro"
+        },
+        {
+            "Id": 341,
+            "ArtistEn": "EmoCosine",
+            "ArtistTrack": 0,
+            "NameEn": "Distant Star"
+        },
+        {
+            "Id": 342,
+            "ArtistEn": "KARUT",
+            "ArtistTrack": 0,
+            "NameEn": "Toki no Nagare"
+        },
+        {
+            "Id": 343,
+            "ArtistEn": "KARUT",
+            "ArtistTrack": 0,
+            "NameEn": "Metal Armored Crab"
+        },
+        {
+            "Id": 347,
+            "ArtistEn": "KARUT",
+            "ArtistTrack": 0,
+            "NameEn": "Oriental Splash"
+        },
+        {
+            "Id": 349,
+            "ArtistEn": "Mitsukiyo",
+            "ArtistTrack": 0,
+            "NameEn": "A Honey Oriental Yogurt"
+        },
+        {
+            "Id": 350,
+            "ArtistEn": "EmoCosine",
+            "ArtistTrack": 0,
+            "NameEn": ""
+        },
+        {
+            "Id": 357,
+            "ArtistEn": "KARUT",
+            "ArtistTrack": 0,
+            "NameEn": "Gehenna Anthem (Satsuki Arrange)"
+        },
+        {
+            "Id": 358,
+            "ArtistEn": "KARUT",
+            "ArtistTrack": 0,
+            "NameEn": "Rosa Plateada"
+        },
+        {
+            "Id": 359,
+            "ArtistEn": "EmoCosine",
+            "ArtistTrack": 0,
+            "NameEn": ""
+        },
+        {
+            "Id": 360,
+            "ArtistEn": "EmoCosine",
+            "ArtistTrack": 0,
+            "NameEn": ""
+        },
+        {
+            "Id": 375,
+            "ArtistEn": "KARUT",
+            "ArtistTrack": 0,
+            "NameEn": ""
         },
         {
             "Id": 10004,

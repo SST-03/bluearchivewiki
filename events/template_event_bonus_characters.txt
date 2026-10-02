@@ -6,7 +6,7 @@
 !Bonus Rate
 !style="color:#f02e2e;" |Striker
 !style="color:#274ff2;" |Special
-!style="font-stretch: condensed;" |Max Bonus Rate
+!class="condensed" |Max Bonus Rate
 {% for item in bonus_values if bonus_values[item] != [] -%}
 |-
 | rowspan="{{len(bonus_values[item])}}" |{% raw %}{{{% endraw %}ItemCard|{{event_currencies[item]['Name']}}|80px|block{% raw %}}}{% endraw %}
@@ -16,7 +16,7 @@
 |{{bonus}}%
 | style="text-align:left" |{% for character in bonus_characters[item] if character['Class'] == 'Striker' and character['BonusPercentage'] == bonus -%}{% raw %}{{{% endraw %}CharacterCard|{{character['Name']}}{% raw %}|80px}}{% endraw %}{% endfor %}
 | style="text-align:left" |{% for character in bonus_characters[item] if character['Class'] == 'Special' and character['BonusPercentage'] == bonus -%}{% raw %}{{{% endraw %}CharacterCard|{{character['Name']}}{% raw %}|80px}}{% endraw %}{% endfor %}
-{% if loop.index == 1 %}| rowspan="{{len(bonus_values[item])}}" |
+{% if loop.index == 1 %}| rowspan="{{len(bonus_values[item])}}" |{{max_bonus[item]}}%
 {% endif -%}
 {% endfor -%}{% endfor -%}
 {% raw %}|}{% endraw %}

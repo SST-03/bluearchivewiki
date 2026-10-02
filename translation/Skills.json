@@ -88,8 +88,13 @@
         },
         {
             "GroupId": "ShimikoPublic01",
-            "NameEn": "Chicken soup for the Soul",
-            "DescriptionEn": "Every $1, grant a shield to an ally with the lowest HP (shield HP is $2 of Shimiko's Healing). (Duration: $3)"
+            "NameEn": "Food for the Soul",
+            "DescriptionEn": "Every $1, grant a shield of $2 Healong to an ally with the lowest HP. (Duration: $3)"
+        },
+        {
+            "GroupId": "ShimikoGearPublic01",
+            "NameEn": "Food for the Soul +",
+            "DescriptionEn": "Every $1, grant a shield of $2 Healing for $3 and increase Attack Speed by $4 for $5 to the 2 allies with the lowest HP.\nAdditionally, reduce own skill cost by $6 for $7 EX Skill use.\nFor the next EX Skill use, the cover object gains additional HP of $8 of Shimiko's Max HP."
         },
         {
             "GroupId": "ShimikoPassive01",
@@ -354,7 +359,7 @@
         {
             "GroupId": "FuukaExtraPassive01",
             "NameEn": "Pride of School Lunch Club",
-            "DescriptionEn": "Increase Critical Rate Resistance of all allies by $1."
+            "DescriptionEn": "Increase Critical Hit Resistance of all allies by $1."
         },
         {
             "GroupId": "MutsukiEx01",
@@ -1067,13 +1072,18 @@
         },
         {
             "GroupId": "KarinEx01",
-            "NameEn": "Eliminating Target",
+            "NameEn": "Target Removal",
             "DescriptionEn": "Deal $1 Attack damage to one enemy. If enemy is colossal-sized, deal an additional $2 damage."
         },
         {
             "GroupId": "KarinPublic01",
             "NameEn": "Initiate Fire Support",
             "DescriptionEn": "Every $1, deal $2 Attack damage to one enemy, with a $3 chance to stun. (Duration: $4)"
+        },
+        {
+            "GroupId": "KarinGearPublic01",
+            "NameEn": "Initiate Fire Support +",
+            "DescriptionEn": "At the beginning of combat, acquire Codename 02.\nWhile possessing Codename 02, EX Skill bonus damage applies to large enemies as well.\nEvery $1, deal $2 Attack damage to one enemy, and inflict Stun for $3."
         },
         {
             "GroupId": "KarinPassive01",
@@ -1154,7 +1164,12 @@
         {
             "GroupId": "AyanePublic01",
             "NameEn": "Learning Support",
-            "DescriptionEn": "Every $1, increase the critical hit resistance of all allies in a circular area by $2."
+            "DescriptionEn": "Every $1, increase the Critical Hit Resistance of all allies in a circular area by $2."
+        },
+        {
+            "GroupId": "AyaneGearPublic01",
+            "NameEn": "Learning Support +",
+            "DescriptionEn": "Every $1, increase the Critical Hit Resistance of Striker allies by $2 for $3 and grant them \"Relief Supplies\". (Can only be used $4 time per battle)\nWhen an ally holding \"Relief Supplies\" has HP below $5, the \"Relief Supplies\" are consumed to heal them by $6 of Healing."
         },
         {
             "GroupId": "AyanePassive01",
@@ -2217,8 +2232,8 @@
         },
         {
             "GroupId": "CH0160Public01",
-            "NameEn": "Into the backdoor",
-            "DescriptionEn": "Every $1, decrease Attack of one enemy with the highest Attack by $1 for $2."
+            "NameEn": "Through the backdoor",
+            "DescriptionEn": "Every $1, decrease Attack of one enemy with the highest Attack by $2 for $3."
         },
         {
             "GroupId": "CH0160Passive01",
@@ -2355,12 +2370,17 @@
         {
             "GroupId": "CH0100Ex01",
             "NameEn": "Promptly and precisely",
-            "DescriptionEn": "Deal $1 damage to enemies in a conical area, ignoring $2 of their defense."
+            "DescriptionEn": "Deal $1 damage to enemies in a conical area, ignoring $2 of their Defense."
         },
         {
             "GroupId": "CH0100Public01",
             "NameEn": "Wide-area firing, commence",
-            "DescriptionEn": "Every $1, deal $2 damage to enemies in a circular area, ignoring $3 of their defense."
+            "DescriptionEn": "Every $1, deal $2 damage to enemies in a circular area, ignoring $3 of their Defense."
+        },
+        {
+            "GroupId": "CH0100GearPublic01",
+            "NameEn": "Wide-area firing, commence +",
+            "DescriptionEn": "Every $1, increase Mystic Efficiency by $2 for $3.\nDeal $4 damage to enemies in a circular area, ignoring $5 of their Defense"
         },
         {
             "GroupId": "CH0100Passive01",
@@ -2652,7 +2672,7 @@
         {
             "GroupId": "CH0116WeaponPassive01",
             "NameEn": "Healing wave! +",
-            "DescriptionEn": "Increase Healing  by $1. Further increase Healing by $2."
+            "DescriptionEn": "Increase Healing by $1. Further increase Healing by $2."
         },
         {
             "GroupId": "CH0116ExtraPassive01",
@@ -2669,6 +2689,11 @@
             "GroupId": "CH0156Public01",
             "NameEn": "It's annoying...",
             "DescriptionEn": "Every $1, fire shells at up to 4 enemies. Deal $2 damage within the circular area around targeted enemy."
+        },
+        {
+            "GroupId": "CH0156GearPublic01",
+            "NameEn": "It's annoying... +",
+            "DescriptionEn": "Every $1, fire shells at up to 4 enemies. Deal $2 damage within the circular area around targeted enemy.\nIf Toramaru is deployed, additionally grant Toramaru the \"High Explosive shell loaded\" effect. When \"Main gun aim, fire\" is used while Toramaru has this effect, Toramaru's \"High Explosive shell loaded\" is consumed and the damage multiplier of \"Main gun aim, fire\" is increased by x$3."
         },
         {
             "GroupId": "CH0156Passive01",
@@ -3046,13 +3071,13 @@
         {
             "GroupId": "CH0075ExtraPassive01",
             "NameEn": "Nibble",
-            "DescriptionEn": "When reloading, decrease Attack Speed by $1, but increase Attack by $2 for $3.<br>Stacks up to a maximum of $4 times."
+            "DescriptionEn": "When reloading, decrease Attack Speed by $1, but increase Attack by $2 for $3.\nStacks up to a maximum of $4 times."
         },
 
         {
             "GroupId": "CH0143Ex01",
             "NameEn": "Iron Rain",
-            "DescriptionEn": "Deal $1 damage to enemies in a straight line.<br>Apply $2 of continuous burn damage for $3."
+            "DescriptionEn": "Deal $1 damage to enemies in a straight line.\nApply $2 of continuous burn damage for $3."
         },
         {
             "GroupId": "CH0143Public01",
@@ -4706,7 +4731,7 @@
         {
             "GroupId": "CH0079ExtraPassive01",
             "NameEn": "Invincible! The true leader of Gehenna!",
-            "DescriptionEn": "Increase Piercing Efficiency of all aliies by $1."
+            "DescriptionEn": "Increase Piercing Efficiency of all allies by $1."
         },
 
         {
@@ -5469,22 +5494,22 @@
 
         {
             "GroupId": "CH0139Ex01",
-            "NameEn": "Imperial Edict: Gather Knowledge",
+            "NameEn": "Imperial Edict: Investigation",
             "DescriptionEn": "For one ally, increase the EX Skill damage by $1 for $2."
         },
         {
             "GroupId": "CH0139Public01",
-            "NameEn": "Imperial Edict: Ethics and Discipline",
+            "NameEn": "Imperial Order: Ethics and Discipline",
             "DescriptionEn": "Every $1, grant a shield of $2 Healing to the ally with the lowest HP for $3."
         },
         {
             "GroupId": "CH0139Passive01",
-            "NameEn": "Order: Moderation",
+            "NameEn": "Mandate: Moderation",
             "DescriptionEn": "Increase Healing by $1."
         },
         {
             "GroupId": "CH0139WeaponPassive01",
-            "NameEn": "Order: Moderation +",
+            "NameEn": "Mandate: Moderation +",
             "DescriptionEn": "Increase Buff Duration by $1. Increase Healing by $2."
         },
         {
@@ -6423,6 +6448,11 @@
             "DescriptionEn": "Every $1, reduce one enemy's Critical Damage Resistance by $2 for $3.\nDeal $4 damage."
         },
         {
+            "GroupId": "CH0304GearPublic01",
+            "NameEn": "Spellbook Guidance +",
+            "DescriptionEn": "Every $1, reduce one enemy's Critical Damage Resistance by $2 and apply Grimoire for $3.\nDeal $4 damage.\nAttacking a target affected by Grimoire with an enhanced EX Skill additionally increases the damage multiplier by 1. Afterwards, remove Grimoire from the target."
+        },
+        {
             "GroupId": "CH0304Passive01",
             "NameEn": "Good Omen",
             "DescriptionEn": "Increase Attack by $1."
@@ -7203,8 +7233,484 @@
             "GroupId": "CH0174ExtraPassive01",
             "NameEn": "Sniper's intuition",
             "DescriptionEn": "Increase Attack by $1.\nNormal attack and Normal Skill damage is multiplied $2-fold in proportion to the EX Skill damage buff. (the maximum value is applied when the EX Skill damage buff is $3)"
-        }
+        },
 
+        {
+            "GroupId": "CH0076Ex01",
+            "NameEn": "This one!",
+            "DescriptionEn": "Remove $1 debuffs from one ally, heal them for $2, and gain Keychains for each debuff removed. (Keychains stack up to a maximum of 3)"
+        },
+        {
+            "GroupId": "CH0076Public01",
+            "NameEn": "Here, a present",
+            "DescriptionEn": "Upon obtaining 3 Keychains, consume all of them to increase the Critical Damage of Striker allies by $1 for $2. (Cooldown: $3)"
+        },
+        {
+            "GroupId": "CH0076Passive01",
+            "NameEn": "Here's a bandage",
+            "DescriptionEn": "Increase Healing by $1."
+        },
+        {
+            "GroupId": "CH0076WeaponPassive01",
+            "NameEn": "Here's a bandage +",
+            "DescriptionEn": "Increase Healing by $1. Further increase Healing by $2."
+        },
+        {
+            "GroupId": "CH0076ExtraPassive01",
+            "NameEn": "A sparkling☆ vibe?",
+            "DescriptionEn": "Increase the Critical Damage of Attacker allies by $1."
+        },
+
+        {
+            "GroupId": "CH0246Ex01",
+            "NameEn": "Explosive Minuet",
+            "DescriptionEn": "Deal $1 damage to one enemy."
+        },
+        {
+            "GroupId": "CH0246Public01",
+            "NameEn": "Watch your step!",
+            "DescriptionEn": "Every $1, reduce Critical Damage Resistance of enemies within a circular area by $2 for $3.\nDeal $5 damage to enemies within a circular area every $4, for $6."
+        },
+        {
+            "GroupId": "CH0246Passive01",
+            "NameEn": "It's gonna get even better, you know?",
+            "DescriptionEn": "Increase Attack by $1."
+        },
+        {
+            "GroupId": "CH0246WeaponPassive01",
+            "NameEn": "It's gonna get even better, you know? +",
+            "DescriptionEn": "Increase Defense Penetration by $1. Increase Attack by $2."
+        },
+        {
+            "GroupId": "CH0246ExtraPassive01",
+            "NameEn": "Let's play together!",
+            "DescriptionEn": "Increase Attack of allied Special students by $1."
+        },
+
+        {
+            "GroupId": "CH0247Ex01",
+            "NameEn": "I will surrender myself to this",
+            "DescriptionEn": "Deal $1 damage to one enemy. (This attack ignores $2 of the enemy Defense)\nDeal fixed damage of $3 max HP to self. (This effect can't make Haruka retreat from battle)"
+        },
+        {
+            "GroupId": "CH0247Public01",
+            "NameEn": "Like flowers blooming",
+            "DescriptionEn": "Every $1, increases Attack by $2 for $3.\nHeal for $4 of Healing. (Healing amount is multiplied by x1-2 depending on current HP; the lower the HP, the greater the healing amount)"
+        },
+        {
+            "GroupId": "CH0247Passive01",
+            "NameEn": "The weed's desire",
+            "DescriptionEn": "Increase Attack by $1."
+        },
+        {
+            "GroupId": "CH0247WeaponPassive01",
+            "NameEn": "The weed's desire +",
+            "DescriptionEn": "Increase Critical Damage by $1. Increase Attack by $2."
+        },
+        {
+            "GroupId": "CH0247ExtraPassive01",
+            "NameEn": "Please disappear, please disappear!",
+            "DescriptionEn": "When damage is taken, gain 1 \"I Will Not Forgive\" for $1. (Cooldown: $2)\n\"I Will Not Forgive\" can stack up to a maximum of $3, and each \"I Will Not Forgive\" increases Critical Damage by $4."
+        },
+
+        {
+            "GroupId": "CH0303Ex01",
+            "NameEn": "Beautiful as a flower",
+            "DescriptionEn": "Increase Explosive Efficiency of self and allied Special students by $1 for $2."
+        },
+        {
+            "GroupId": "CH0303Public01",
+            "NameEn": "Unleashed fastball",
+            "DescriptionEn": "Every $1, reduce Critical Damage Resistance of one enemy with the highest maximum HP by $2 for $3.\nDeal $4 damage."
+        },
+        {
+            "GroupId": "CH0303Passive01",
+            "NameEn": "Twilight-defying flower",
+            "DescriptionEn": "Increase Attack by $1."
+        },
+        {
+            "GroupId": "CH0303WeaponPassive01",
+            "NameEn": "Twilight-defying flower +",
+            "DescriptionEn": "Increase Buff Duration by $1. Increase Attack by $2."
+        },
+        {
+            "GroupId": "CH0303ExtraPassive01",
+            "NameEn": "Inheritor of the Hundred Lotus",
+            "DescriptionEn": "Increase Explosive Efficiency of self and allied Special students by $1."
+        },
+
+        {
+            "GroupId": "CH0355_01Ex01",
+            "NameEn": "The field trip isn't over until you get home",
+            "DescriptionEn": "Deal $1 damage to one enemy.\nGain Flower Bud for $2, and immediately draw an EX Skill card.\nWhile Flower Bud is active, EX skill changes to \"Please pay attention, okay?\".\nWhen Flower Bud is removed, move the EX skill card to the bottom of the deck."
+        },
+        {
+            "GroupId": "CH0355_01Ex02",
+            "NameEn": "Please pay attention, okay?",
+            "DescriptionEn": "Deal $1 damage to one enemy.\nCan only be used when you have Flower Bud."
+        },
+        {
+            "GroupId": "CH0355_01Public01",
+            "NameEn": "That's not allowed",
+            "DescriptionEn": "Every $1, deal $2 damage to one enemy."
+        },
+        {
+            "GroupId": "CH0355_01Passive01",
+            "NameEn": "Instructor on vacation",
+            "DescriptionEn": "Increase Attack by $1."
+        },
+        {
+            "GroupId": "CH0355_01WeaponPassive01",
+            "NameEn": "Instructor on vacation +",
+            "DescriptionEn": "Increase Sonic Efficiency by $1. Increase Attack by $2."
+        },
+        {
+            "GroupId": "CH0355_01ExtraPassive01",
+            "NameEn": "The teachings of Plum Blossom Garden",
+            "DescriptionEn": "When acquiring a Flower Bud and every $1 thereafter, the Flower Bud blooms in 3 stages.\nWhen using \"Please pay attention, okay?\", consume Flower Bud and increase the amount of damage dealt by $2 per stage of the growth (for $3)."
+        },
+
+        {
+            "GroupId": "CH0355_02Ex01",
+            "NameEn": "Please hold me!",
+            "DescriptionEn": "Deal $1 damage to one enemy.\nAfter each use, the damage from \"Please hold me!\" for the rest of this battle is reduced by $2 of Attack (stacks up to a maximum of $3)"
+        },
+        {
+            "GroupId": "CH0355_02Public01",
+            "NameEn": "Must focus!",
+            "DescriptionEn": "At the start of battle, gain $1 Skill Cost for each allied student in formation (up to a maximum of $2). (Can only be used $3 time per battle)\nIf another student in the squad also has an effect that grants Cost at the start of battle, this effect will not grant Cost."
+        },
+        {
+            "GroupId": "CH0355_02Passive01",
+            "NameEn": "Child power",
+            "DescriptionEn": "Increase Critical Rate by $1."
+        },
+        {
+            "GroupId": "CH0355_02WeaponPassive01",
+            "NameEn": "Child power +",
+            "DescriptionEn": "Increase Attack by $1. Increase Critical Rate by $2."
+        },
+        {
+            "GroupId": "CH0355_02ExtraPassive01",
+            "NameEn": "Resort fun",
+            "DescriptionEn": "While using the EX skill, Sonic Efficiency is increased by $1."
+        },
+
+        {
+            "GroupId": "CH0356Ex01",
+            "NameEn": "Announcement: Closed Today",
+            "DescriptionEn": "Reduce Skill Cost of 3 closest allied Strikers (excluding self) by $1 (Reduction active until EX is activated once).\nIncrease own Cost Recovery by $2 for $3.\nYour next two EX Skills change to \"Practice: Banzai Calisthenics\"."
+        },
+        {
+            "GroupId": "CH0356Ex02",
+            "NameEn": "Practice: Banzai Calisthenics",
+            "DescriptionEn": "Increase Cost Recovery by $1 for $2.\nAfter using Practice: Banzai Calisthenics twice, the skill will change to \"Announcement: Closed Today\"."
+        },
+        {
+            "GroupId": "CH0356Ex03",
+            "NameEn": "Practice: Banzai Calisthenics",
+            "DescriptionEn": "Increase Cost Recovery by $1 for $2.\nAfter using Practice: Banzai Calisthenics twice, the skill will change to \"Announcement: Closed Today\"."
+        },
+        {
+            "GroupId": "CH0356Ex04",
+            "NameEn": "Practice: Banzai Calisthenics",
+            "DescriptionEn": "Increase Cost Recovery by $1 for $2.\nAfter using Practice: Banzai Calisthenics twice, the skill will change to \"Announcement: Closed Today\"."
+        },
+        {
+            "GroupId": "CH0356Public01",
+            "NameEn": "Decision: Enforcement",
+            "DescriptionEn": "Every $1, reduce one enemy's Critical Hit Resistance by $2 for $3. Deal $4 damage."
+        },
+        {
+            "GroupId": "CH0356Passive01",
+            "NameEn": "Inspection: On-site Audit",
+            "DescriptionEn": "Increase normal attack Firing Range by $1 and HP by $2."
+        },
+        {
+            "GroupId": "CH0356WeaponPassive01",
+            "NameEn": "Inspection: On-site Audit +",
+            "DescriptionEn": "Increase Buff Duration by $1. Increase normal attack Firing Range by $2 and HP by $3."
+        },
+        {
+            "GroupId": "CH0356ExtraPassive01",
+            "NameEn": "Convalescence: Restoring Vitality",
+            "DescriptionEn": "When allies deal $1 critical hits, heal self for $2 of Healing."
+        },
+
+        {
+            "GroupId": "CH0344Ex01",
+            "NameEn": "Set course for horizon!",
+            "DescriptionEn": "Deal $1 damage to one enemy.\nDeal damage to enemies depending on the number of them within the circular area:\n2 or less: Deal $2 damage\n3 or more: Deal $3  damage"
+        },
+        {
+            "GroupId": "CH0344Public01",
+            "NameEn": "Our captain!",
+            "DescriptionEn": "At the start of battle and every $1 thereafter, increase Attack by $2 for $3 and enter the Charisma state."
+        },
+        {
+            "GroupId": "CH0344Passive01",
+            "NameEn": "Hidden potential?",
+            "DescriptionEn": "Increase Attack by $1."
+        },
+        {
+            "GroupId": "CH0344WeaponPassive01",
+            "NameEn": "Hidden potential? +",
+            "DescriptionEn": "Increase Mystic Efficiency by $1. Increase Attack by $2."
+        },
+        {
+            "GroupId": "CH0344ExtraPassive01",
+            "NameEn": "Charismatic captain",
+            "DescriptionEn": "Increase Critical Rate by $1.\nWhen in Charisma state, if the target of the EX Skill has Special armor, reduce its Defense by $2 for $3 before attacking, then exit the Charisma state."
+        },
+
+        {
+            "GroupId": "CH0345Ex01",
+            "NameEn": "Satsuki Kyogoku Safety Protocol",
+            "DescriptionEn": "Heal one other ally for $1 of Healing.\nHeal self for $2 of Healing.\nGain $3 Sunscreen. (Sunscreen stacks up to a maximum of $4)"
+        },
+        {
+            "GroupId": "CH0345Public01",
+            "NameEn": "Aah!? What!?",
+            "DescriptionEn": "Every $1, reduce Defense of one enemy by $2 for $3.\nDeal $4 damage to them.\nGain $5 Sunscreen. (Sunscreen stacks up to a maximum of $6)"
+        },
+        {
+            "GroupId": "CH0345Passive01",
+            "NameEn": "Let me put some on you",
+            "DescriptionEn": "Increase Healing by $1."
+        },
+        {
+            "GroupId": "CH0345WeaponPassive01",
+            "NameEn": "Let me put some on you +",
+            "DescriptionEn": "Increase HP by $1. Increase Healing by $2."
+        },
+        {
+            "GroupId": "CH0345ExtraPassive01",
+            "NameEn": "Go have fun!",
+            "DescriptionEn": "When you acquire $1 Sunscreens, heal all allied Strikers (excluding self) by $2 of Healing, and grant them UV Barrier for $3. The UV Barrier increases Attack by $4. (Resets Sunscreen stacks)"
+        },
+
+        {
+            "GroupId": "CH0348Ex01",
+            "NameEn": "Shake, shake~ Shake, shake!",
+            "DescriptionEn": "Fire two rockets, dealing $1 and $2 damage to the nearest enemy.\n(These attacks penetrate enemy shields)"
+        },
+        {
+            "GroupId": "CH0348Public01",
+            "NameEn": "That's amazing!",
+            "DescriptionEn": "Every $1, reduce one enemy's Critical Damage Resistance by $2 for $3."
+        },
+        {
+            "GroupId": "CH0348Passive01",
+            "NameEn": "Live on scene!",
+            "DescriptionEn": "Increase Attack by $1."
+        },
+        {
+            "GroupId": "CH0348WeaponPassive01",
+            "NameEn": "Live on scene! +",
+            "DescriptionEn": "Increase Piercing Efficiency by $1. Increase Attack by $2."
+        },
+        {
+            "GroupId": "CH0348ExtraPassive01",
+            "NameEn": "Scoop spotted!",
+            "DescriptionEn": "Increase Piercing Efficiency of all allies by $1."
+        },
+
+        {
+            "GroupId": "CH0346Ex01",
+            "NameEn": "Fräulein's Suitcase",
+            "DescriptionEn": "Deal $1 guaranteed critical damage to one enemy, and apply the Suitcase for $2.\nDamage dealt by Partner student to an enemy with the Suitcase is stored in the Suitcase at $3 times its value.\nWhen the duration ends or when Iroha (Swimsuit) uses her EX Skill, the Suitcase explodes, dealing fixed damage equal to the amount stored.\n(The fixed damage is up to $4 of the damage dealt by Iroha (Swimsuit) when the Suitcase was applied)"
+        },
+        {
+            "GroupId": "CH0346Public01",
+            "NameEn": "We're both in the same boat, huh?",
+            "DescriptionEn": "Every $1, increase Attack of your Partner and yourself by $2 for $3."
+        },
+        {
+            "GroupId": "CH0346Passive01",
+            "NameEn": "Found your weakness",
+            "DescriptionEn": "Increase Critical Damage by $1."
+        },
+        {
+            "GroupId": "CH0346WeaponPassive01",
+            "NameEn": "Found your weakness +",
+            "DescriptionEn": "Increase Explosive Efficiency by $1. Increase Critical Damage by $2."
+        },
+        {
+            "GroupId": "CH0346ExtraPassive01",
+            "NameEn": "Is it a joint operation?",
+            "DescriptionEn": "Increase Attack by $1.\nWhen entering a battle, select one other Striker ally with the highest Critical Damage as your Partner.\n(Prioritizes selecting Attacker allies)"
+        },
+
+        {
+            "GroupId": "CH0347Ex01",
+            "NameEn": "Ibuki's friends!",
+            "DescriptionEn": "Designate up to two of the allied Strikers as Friends.\nChange this skill to \"Which one should I pick?\" for the duration of the battle. Draw an EX Skill card instantly.\nWhenever a Friend student consumes Cost, Ibuki (Swimsuit) gains $1 Seashells, and when she has $2 Seashells, she consumes them all to gain a Seashell Flower, and will not gain any more Seashells."
+        },
+        {
+            "GroupId": "CH0347Ex02",
+            "NameEn": "Which one should I pick?",
+            "DescriptionEn": "Increase Critical Damage of your Friend students by $1 for $2.\nWhen holding a Seashell Flower, enhance this skill and increase the Critical Damage bonus multiplier by $3."
+        },
+        {
+            "GroupId": "CH0347Ex03",
+            "NameEn": "Which one should I pick? (Enhanced)",
+            "DescriptionEn": "Increase Critical Damage of your Friend students by $1 for $2.\n(Skill is enhanced because Ibuki has the Seashell Flower)"
+        },
+        {
+            "GroupId": "CH0347Public01",
+            "NameEn": "Ibuki can help!",
+            "DescriptionEn": "After using \"Ibuki's Friends!\", every $1, grant an effect (for $2) according to the class of each of Friend student:\nTank: Increase Defense by $3\nAttacker: Increase Critical Damage by $4\nSupporter: Continuously heal for $5 of Healing\nHealer: Increase Healing by $6\nIf both Friend students are of the same class, the effect is doubled.\nWhen holding Seashell Flower, the skill is enhanced and the effect duration is increased to $7."
+        },
+        {
+            "GroupId": "CH0347Passive01",
+            "NameEn": "Pandemonium Society's Conscience",
+            "DescriptionEn": "Increase Healing by $1."
+        },
+        {
+            "GroupId": "CH0347WeaponPassive01",
+            "NameEn": "Pandemonium Society's Conscience +",
+            "DescriptionEn": "Increase Buff Duration by $1. Increase Healing by $2."
+        },
+        {
+            "GroupId": "CH0347ExtraPassive01",
+            "NameEn": "Little Genius Professor",
+            "DescriptionEn": "Increase Cost Recovery of all allies by $1."
+        },
+
+        {
+            "GroupId": "CH0368Ex01",
+            "NameEn": "Diving, start!",
+            "DescriptionEn": "For one other ally, increase the damage dealt by EX Skill by $1 for $2.\n(If the target has a \"Surfacing!\" effect, remove it)\nKokoro enters a Submerged state and her EX Skill changes to \"Surfacing!\"."
+        },
+        {
+            "GroupId": "CH0368Ex02",
+            "NameEn": "Surfacing!",
+            "DescriptionEn": "Increase Base Proficiency of one other ally by $1 for $2.\n(If the target has a \"Diving, start!\" effect, remove it)\nKokoro exits the Submerged state and her EX Skill changes to \"Diving, start!\"\n(Base Proficiency: Increase damage dealt by normal attacks, Normal Skills, and Sub Skills)"
+        },
+        {
+            "GroupId": "CH0368Public01",
+            "NameEn": "Underwater breaching",
+            "DescriptionEn": "Every $1 normal attacks, deal $2 damage to one enemy and lower their Attack by $3 for $4."
+        },
+        {
+            "GroupId": "CH0368Passive01",
+            "NameEn": "Diver's instinct",
+            "DescriptionEn": "Increase Attack by $1."
+        },
+        {
+            "GroupId": "CH0368WeaponPassive01",
+            "NameEn": "Diver's instinct +",
+            "DescriptionEn": "Increase Buff Duration by $1. Increase Attack by $2."
+        },
+        {
+            "GroupId": "CH0368ExtraPassive01",
+            "NameEn": "Breath control",
+            "DescriptionEn": "HP is increased by $1 and Base Proficiency is increased by $2.\nWhen using EX Skill on an Attacker ally who does not possess a \"Safety Certificate\", grant them a \"Safety Certificate\" and triple the duration of the effect of that EX Skill (removes all \"Safety Certificates\" possessed by other allies).\nWhile Submerged, change all damage dealt to EX damage type and increase the damage dealt by EX Skill by $3."
+        },
+
+        {
+            "GroupId": "CH0369Ex01",
+            "NameEn": "Loading underwater flechette ammunition",
+            "DescriptionEn": "Heal self for $1 of Healing.\nReload instantly after activation.\nNormal attacks deal $2 damage (effective until Kotone reloads $3 time)."
+        },
+                {
+            "GroupId": "CH0369Public01",
+            "NameEn": "Deep Sea guide",
+            "DescriptionEn": "Every $1, increase the damage dealt by the EX Skills of the three other allies excluding self by $2 for $3."
+        },
+        {
+            "GroupId": "CH0369Passive01",
+            "NameEn": "Orca's resilience",
+            "DescriptionEn": "Increase HP by $1."
+        },
+        {
+            "GroupId": "CH0369WeaponPassive01",
+            "NameEn": "Orca's resilience +",
+            "DescriptionEn": "Increase Healing by $1. Increase HP by $2."
+        },
+        {
+            "GroupId": "CH0369ExtraPassive01",
+            "NameEn": "Leviathan",
+            "DescriptionEn": "When attacking, there is a $1 chance to reduce target's Defense by $2 for $3. (Cooldown: $4)\nWhen normal attacks are enhanced by the EX Skill, with every $5 normal attack, heal self for $6 of Healing."
+        },
+
+        {
+            "GroupId": "CH0328Ex01",
+            "NameEn": "Beat the Drill Bit",
+            "DescriptionEn": "Deal $1 damage to one enemy.\nIf the target has Heavy armor, before the attack increase the amount of Effective damage taken by $2 for $3.\nAfterwards, deal $4 damage to enemies within a circular area."
+        },
+        {
+            "GroupId": "CH0328Public01",
+            "NameEn": "A \"special\" gift",
+            "DescriptionEn": "Every $1, deal $2 damage to one enemy.\nIf the target has Heavy armor, before the attack increase the amount of Effective damage taken by $3 for $4."
+        },
+        {
+            "GroupId": "CH0328Passive01",
+            "NameEn": "Hot Spring freak",
+            "DescriptionEn": "Increase Attack by $1."
+        },
+        {
+            "GroupId": "CH0328WeaponPassive01",
+            "NameEn": "Hot Spring freak +",
+            "DescriptionEn": "Increase Debuff Duration by $1. Increase Attack by $2."
+        },
+        {
+            "GroupId": "CH0328ExtraPassive01",
+            "NameEn": "Why so serious?",
+            "DescriptionEn": "Increase Piercing Efficiency of all allies by $1."
+        },
+
+        {
+            "GroupId": "CH0320Ex01",
+            "NameEn": "Please take a look!",
+            "DescriptionEn": "Deal $1 damage to one enemy.\nIf holding 4 Medals, this attack is a guaranteed critical hit."
+        },
+        {
+            "GroupId": "CH0320Public01",
+            "NameEn": "This is worthy of a medal!",
+            "DescriptionEn": "When allies defeat 8 enemies, gain $1 Medal (up to $2 times per battle).\nUp to 4 Medals can be stacked; each Medal increases damage dealt by $3."
+        },
+        {
+            "GroupId": "CH0320Passive01",
+            "NameEn": "Begin heat treatment!",
+            "DescriptionEn": "Increase Critical Rate by $1."
+        },
+        {
+            "GroupId": "CH0320WeaponPassive01",
+            "NameEn": "Begin heat treatment! +",
+            "DescriptionEn": "Increase Attack by $1. Increase Critical Rate by $2."
+        },
+        {
+            "GroupId": "CH0320ExtraPassive01",
+            "NameEn": "It's looking good!",
+            "DescriptionEn": "Every $1, increase Piercing Efficiency by $2. (stacks up to 3 times)"
+        },
+
+        {
+            "GroupId": "CH0321Ex01",
+            "NameEn": "Let's eat first~",
+            "DescriptionEn": "Grant a shield of $1 Healing to allies within a circular area. (Duration: $2)\nGrant Special Pudding to allies protected by this shield.\nSpecial Pudding increases Attack by $3 and is removed 10 seconds after the \"Let's eat first~\" shield expires."
+        },
+        {
+            "GroupId": "CH0321Public01",
+            "NameEn": "I'm telling you, good enough is fine~",
+            "DescriptionEn": "Every $1, increase the Attack of 6 allies (excluding Special students) by $2 for $3."
+        },
+        {
+            "GroupId": "CH0321Passive01",
+            "NameEn": "Let's take a break~",
+            "DescriptionEn": "Increase Healing by $1."
+        },
+        {
+            "GroupId": "CH0321WeaponPassive01",
+            "NameEn": "Let's take a break~ +",
+            "DescriptionEn": "Increase Healing by $1. Further increase Healing by $2."
+        },
+        {
+            "GroupId": "CH0321ExtraPassive01",
+            "NameEn": "Let's go all out~!",
+            "DescriptionEn": "Increase Attack of all allies by $1."
+        }
 
     ]
 }

@@ -1,4 +1,5 @@
 import collections
+import collections.abc
 import json
 import orjson
 import os
@@ -17,20 +18,21 @@ BlueArchiveData = collections.namedtuple(
     'recipes', 'recipes_ingredients', 
     'favor_levels', 'favor_rewards', 
     'memory_lobby','etc_localization', 'localization', 
-    'character_dialog','character_dialog_event','character_dialog_standard','character_dialog_subtitle','character_voice','character_voice_subtitle',
+    'character_dialog','character_dialog_event','character_dialog_aux','character_dialog_subtitle','character_dialog_battlepass','character_voice','character_voice_subtitle',
     'levelskill','logiceffectdata',
     'guide_mission','guide_mission_season','localize_code',
     'furniture', 'furniture_group', 'furniture_template', 'furniture_template_element', 'cafe_interaction', 
     'campaign_stages', 'campaign_stage_rewards', 'campaign_strategy_objects', 'campaign_units', 
-    'week_dungeon', 'week_dungeon_reward', 'week_dungeon_open_schedule',
-    'event_content_seasons', 'event_content_stages', 'event_content_stage_rewards', 'event_content_stage_total_rewards', 'event_content_mission', 'event_content_character_bonus', 'event_content_currency', 'event_content_shop_info', 'event_content_shop', 'event_content_location_reward', 'event_content_zone', 'event_content_box_gacha_manage', 'event_content_box_gacha_shop', 'event_content_fortune_gacha', 'event_content_fortune_gacha_modify', 'event_content_fortune_gacha_shop', 'event_content_card', 'event_content_card_shop', 'event_content_treasure', 'event_content_treasure_round', 'event_content_treasure_reward', 'event_content_treasure_cell_reward', 'event_content_collection', 'event_content_dice_race', 'event_content_dice_race_node', 'event_content_dice_race_total_reward', 'event_content_clue_search', 'event_content_clue_search_reward', 'event_content_clue_search_round', 'event_content_clue',
+    'week_dungeon', 'week_dungeon_reward', 'week_dungeon_open_schedule', 'week_dungeon_group_buff',
+    'const_event_common', 'event_content_seasons', 'event_content_stages', 'event_content_stage_rewards', 'event_content_stage_total_rewards', 'event_content_mission', 'event_content_character_bonus', 'event_content_currency', 'event_content_shop_info', 'event_content_shop', 'event_content_location_reward', 'event_content_zone', 'event_content_box_gacha_manage', 'event_content_box_gacha_shop', 'event_content_fortune_gacha', 'event_content_fortune_gacha_modify', 'event_content_fortune_gacha_shop', 'event_content_card', 'event_content_card_shop', 'event_content_treasure', 'event_content_treasure_round', 'event_content_treasure_reward', 'event_content_treasure_cell_reward', 'event_content_collection', 'event_content_dice_race', 'event_content_dice_race_node', 'event_content_dice_race_total_reward', 'event_content_clue_search', 'event_content_clue_search_reward', 'event_content_clue_search_round', 'event_content_clue',
     'minigame_mission',
     'minigame_dream_collection_scenario', 'minigame_dream_daily_point', 'minigame_dream_ending', 'minigame_dream_ending_reward', 'minigame_dream_info', 'minigame_dream_parameter', 'minigame_dream_replay_scenario', 'minigame_dream_schedule', 'minigame_dream_schedule_result', 'minigame_dream_timeline', 'minigame_dream_voice',
     'minigame_defense_info', 'minigame_defense_stage', 'minigame_defense_character_ban', 'minigame_defense_fixed_stat', 
     'minigame_roadpuzzle_info', 'minigame_roadpuzzle_railtile', 'minigame_roadpuzzle_map', 'minigame_roadpuzzle_roadround', 'minigame_roadpuzzle_reward',
     'minigame_ccg_card', 'minigame_ccg_character', 'minigame_ccg_enemy', 'minigame_ccg_info', 'minigame_ccg_reward_card', 'minigame_ccg_reward_card_rate', 'minigame_ccg_reward_item', 'minigame_ccg_skill', 'minigame_ccg_open_dialog',
-    'ground', 
-    'gacha_elements', 'gacha_elements_recursive', 'gacha_groups', 'gacha_select_pickup_group',
+    'minigame_janken_info', 'minigame_janken_stage', 'minigame_janken_character', 'minigame_janken_character_ai', 'minigame_janken_character_skill', 'minigame_janken_equipment', 'minigame_janken_fixed_echelon', 'minigame_janken_reward_score', 'minigame_janken_reward_score_item', 'minigame_janken_voice',
+    'ground', 'ground_module_reward',
+    'gacha_elements', 'gacha_elements_recursive', 'gacha_groups',
     'strategymaps','goods', 'stages',
     'raid_stage', 'raid_stage_reward', 'raid_stage_season_reward', 'raid_ranking_reward',
     'world_raid_stage','world_raid_stage_reward', 'world_raid_boss_group', 
@@ -76,12 +78,13 @@ def load_data(path_primary, path_secondary, path_translation):
         memory_lobby=               load_generic(path_primary, 'MemoryLobbyExcelTable.json', key='Id'),
         etc_localization=           load_combined_localization(path_primary, path_secondary, path_translation, 'LocalizeEtcExcelTable.json'),
         localization=               load_combined_localization(path_primary, path_secondary, path_translation, 'LocalizeExcelTable.json'),
-        character_dialog=           load_character_dialog(path_primary, path_secondary, path_translation, 'CharacterDialogExcelTable.json'),
-        character_dialog_event=     load_character_dialog(path_primary, path_secondary, path_translation, 'CharacterDialogEventExcelTable.json', match_id='OriginalCharacterId', aux_prefix='event'),
-        character_dialog_standard=  load_character_dialog_standard(path_translation),
-        character_dialog_subtitle=  load_character_subtitle(path_primary, path_secondary, path_translation, 'CharacterDialogSubtitleExcelTable.json', match_id='CharacterId'),
+        character_dialog=           load_character_dialog(path_primary, path_secondary, 'CharacterDialogExcelTable.json'),
+        character_dialog_event=     load_character_dialog(path_primary, path_secondary, 'CharacterDialogEventExcelTable.json', match_id='OriginalCharacterId'),
+        character_dialog_aux=       load_character_dialog_aux(path_translation),
+        character_dialog_subtitle=  load_character_subtitle(path_primary, path_secondary, 'CharacterDialogSubtitleExcelTable.json', match_id='CharacterId'),
+        character_dialog_battlepass=load_character_dialog(path_primary, path_secondary, 'CharacterDialogBattlePassExcelTable.json', match_id='OriginalCharacterId'),
         character_voice=            load_file_grouped(path_primary, 'CharacterVoiceExcelTable.json', key='CharacterVoiceGroupId'),
-        character_voice_subtitle=   load_character_subtitle(path_primary, path_secondary, path_translation, 'CharacterVoiceSubtitleExcelTable.json', match_id='CharacterVoiceGroupId'),
+        character_voice_subtitle=   load_character_subtitle(path_primary, path_secondary, 'CharacterVoiceSubtitleExcelTable.json', match_id='CharacterVoiceGroupId'),
         levelskill =                load_levelskill(path_primary),
         logiceffectdata =           load_skill_logiceffectdata(path_primary),
         guide_mission =             load_generic(path_primary, 'GuideMissionExcelTable.json'),
@@ -99,6 +102,8 @@ def load_data(path_primary, path_secondary, path_translation):
         week_dungeon=               load_generic(path_primary, 'WeekDungeonExcelTable.json', key='StageId'),
         week_dungeon_reward=        load_file_grouped(path_primary, 'WeekDungeonRewardExcelTable.json', key='GroupId'),
         week_dungeon_open_schedule= load_generic(path_primary, 'WeekDungeonOpenScheduleExcelTable.json', key='WeekDay'),
+        week_dungeon_group_buff=    load_generic(path_primary, 'WeekDungeonGroupBuffExcelTable.json', key='WeekDungeonBuffId'),
+        const_event_common=         load_generic(path_primary, 'ConstEventCommonExcelTable.json', key=None)[0],
         event_content_seasons=      load_event_content_seasons(path_primary),
         event_content_stages=       load_generic(path_primary, 'EventContentStageExcelTable.json'),
         event_content_stage_rewards=load_file_grouped(path_primary, 'EventContentStageRewardExcelTable.json', 'GroupId'),
@@ -159,11 +164,21 @@ def load_data(path_primary, path_secondary, path_translation):
         minigame_ccg_reward_item =  load_generic(path_primary, 'MinigameCCGRewardItemExcelTable.json', key='Id'),
         minigame_ccg_skill =        load_generic(path_primary, 'MinigameCCGSkillExcelTable.json', key='Id'),
         minigame_ccg_open_dialog =  load_generic(path_primary, 'MinigameCCGOpenDialogExcelTable.json', key=None),
+        minigame_janken_info =      load_generic(path_primary, 'MinigameJankenInfoExcelTable.json', key='EventContentId'),
+        minigame_janken_stage =     load_generic(path_primary, 'MinigameJankenStageExcelTable.json', key='Id'),
+        minigame_janken_character = load_generic(path_primary, 'MinigameJankenCharacterExcelTable.json', key='Id'),
+        minigame_janken_character_ai = load_file_grouped(path_primary, 'MinigameJankenCharacterAiExcelTable.json', key='GroupId'),
+        minigame_janken_character_skill = load_generic(path_primary, 'MinigameJankenCharacterSkillExcelTable.json', key='Id'),
+        minigame_janken_equipment = load_generic(path_primary, 'MinigameJankenEquipmentExcelTable.json', key='Id'),
+        minigame_janken_fixed_echelon = load_file_grouped(path_primary, 'MinigameJankenFixedEchelonSetExcelTable.json', key='FixedEchelonID'),
+        minigame_janken_reward_score = load_generic(path_primary, 'MinigameJankenRewardScoreExcelTable.json', key='EventContentId'),
+        minigame_janken_reward_score_item = load_generic(path_primary, 'MinigameJankenRewardScoreItemExcelTable.json', key='Id'),
+        minigame_janken_voice =     load_generic(path_primary, 'MinigameJankenVoiceExcelTable.json', key='Id'),
         ground =                    load_generic(path_primary, 'GroundExcelTable.json'),
+        ground_module_reward =      load_file_grouped(path_primary, 'GroundModuleRewardExcelTable.json', 'GroupId'),
         gacha_elements=             load_file_grouped(path_primary, 'GachaElementExcelTable.json', 'GachaGroupID'),
         gacha_elements_recursive=   load_file_grouped(path_primary, 'GachaElementRecursiveExcelTable.json', 'GachaGroupID'),
         gacha_groups=               load_generic(path_primary, 'GachaGroupExcelTable.json', key='ID'),
-        gacha_select_pickup_group=  load_file_grouped(path_primary, 'GachaSelectPickupGroupExcelTable.json', 'GachaGroupId'),
         strategymaps=               load_strategymaps(path_primary),
         goods=                      load_generic(path_primary, 'GoodsExcelTable.json'),
         stages=                     load_stages(path_primary),
@@ -356,138 +371,118 @@ def load_combined_localization(path_primary, path_secondary, path_translation, f
     return data_primary
 
 
-def load_character_dialog(path_primary, path_secondary, path_translation, filename, match_id = 'CharacterId', aux_prefix = 'dialog')->list:
-    dp = {}
+def load_character_dialog(path_primary, path_secondary, filename, match_id = 'CharacterId')->list:
     ds = {}
-    da = {}
     data = []
-    data_aux = []
 
     data_primary = load_generic(path_primary, filename, key=None)
     data_secondary = load_generic(path_secondary, filename, key=None)
 
-    for file in os.listdir(path_translation + '/audio/'):
-        if not file.endswith('.json') or not file.startswith(aux_prefix):
-            continue
-
-        #print(f'Loading additional audio translations from {path_translation}/audio/{file}')
-        data_aux += load_file(os.path.join(path_translation + '/audio/', file), key=None)
-    
-
     for line in data_secondary:
-        ds[(line[match_id], line['DialogCategory'], line_cleanup(line['LocalizeJP'], aggresive=True))] = line 
-
-    for line in data_aux:
-        da[(line[match_id], line['DialogCategory'], line_cleanup(line['LocalizeJP'], aggresive=True))] = line 
+        ds[(line[match_id], line['DialogCategory'], line_cleanup(line['LocalizeJP'], aggresive=True))] = line
 
     for line in data_primary:
-        dp[(line[match_id], line['DialogCategory'], line_cleanup(line['LocalizeJP'], aggresive=True))] = line 
-        try: 
+        try:
             line['LocalizeJP'] = line_cleanup(line['LocalizeJP'])
 
-            if (line[match_id], line['DialogCategory'], line_cleanup(line['LocalizeJP'], aggresive=True)) in da: line['LocalizeEN'] = line_cleanup(da[(line[match_id], line['DialogCategory'], line_cleanup(line['LocalizeJP'], aggresive=True))]['LocalizeEN'])
-            elif (line[match_id], line['DialogCategory'], line_cleanup(line['LocalizeJP'], aggresive=True)) in ds: line['LocalizeEN'] = line_cleanup(ds[(line[match_id], line['DialogCategory'], line_cleanup(line['LocalizeJP'], aggresive=True))]['LocalizeEN'])
+            if (line[match_id], line['DialogCategory'], line_cleanup(line['LocalizeJP'], aggresive=True)) in ds: line['LocalizeEN'] = line_cleanup(ds[(line[match_id], line['DialogCategory'], line_cleanup(line['LocalizeJP'], aggresive=True))]['LocalizeEN'])
             elif 'LocalizeEN' not in line: line['LocalizeEN'] = ''
 
         except KeyError:
-            #print (f"Localization not found {dp[(line['CharacterId'], line['DialogCategory'], line['LocalizeJP'])]}")
             line['LocalizeEN'] = ''
-            pass
 
         data.append(line)
-
-    #Force aux lines into the list if they are missing there completely
-    for key, line in da.items():
-        if key not in dp: 
-            line['LocalizeJP'] = line_cleanup(line['LocalizeJP'])
-            line['LocalizeEN'] = line_cleanup(line['LocalizeEN'])
-            data.append(line)
 
     return data
 
 
-def load_character_subtitle(path_primary, path_secondary, path_translation, filename, match_id = 'CharacterId', aux_prefix = 'standard'):
-    dp = {}
+def load_character_subtitle(path_primary, path_secondary, filename, match_id = 'CharacterId'):
     ds = {}
-    da = {}
     data = []
-    data_aux = []
 
     data_primary = load_generic(path_primary, filename, key=None)
     data_secondary = load_generic(path_secondary, filename, key=None)
 
-    for file in os.listdir(path_translation + '/audio/'):
-        if not file.endswith('.json') or not file.startswith(aux_prefix):
-            continue
-
-        #print(f'Loading additional audio translations from {path_translation}/audio/{file}')
-        data_aux += load_file(os.path.join(path_translation + '/audio/', file), key=None)
-    data_aux = [x for x in data_aux if 'LocalizeCVGroup' in x and x['LocalizeCVGroup'] is not None] #ignore legacy non-subtitle entries
-
     for line in data_secondary:
-        ds[(line[match_id], line['LocalizeCVGroup'])] = line 
-
-    for line in data_aux:
-        da[(line[match_id], line['LocalizeCVGroup'])] = line 
+        ds[(line[match_id], line['LocalizeCVGroup'])] = line
 
     for line in data_primary:
-        dp[(line[match_id], line['LocalizeCVGroup'])] = line 
-        try: 
+        try:
             line['LocalizeJP'] = line_cleanup(line['LocalizeJP'])
 
-            if (line[match_id], line['LocalizeCVGroup']) in da and da[(line[match_id], line['LocalizeCVGroup'])].get('LocalizeEN','') != '': line['LocalizeEN'] = line_cleanup(da[(line[match_id], line['LocalizeCVGroup'])]['LocalizeEN'])
-            elif (line[match_id], line['LocalizeCVGroup']) in ds: line['LocalizeEN'] = line_cleanup(ds[(line[match_id], line['LocalizeCVGroup'])]['LocalizeEN'])
+            if (line[match_id], line['LocalizeCVGroup']) in ds: line['LocalizeEN'] = line_cleanup(ds[(line[match_id], line['LocalizeCVGroup'])]['LocalizeEN'])
             elif 'LocalizeEN' not in line: line['LocalizeEN'] = ''
 
         except KeyError:
-            #print (f"Localization not found {dp[(line[match_id], line['LocalizeCVGroup'], line['LocalizeJP'])]}")
             line['LocalizeEN'] = ''
-            pass
 
         data.append(line)
-
-    #Force aux lines into the list if they are missing there completely
-    for key, line in da.items():
-        if key not in dp: 
-            line['LocalizeJP'] = line_cleanup(line['LocalizeJP'])
-            line['LocalizeEN'] = line_cleanup(line['LocalizeEN'])
-            data.append(line)
 
     return data
 
 
-def load_character_dialog_standard(path_translation):
+def load_character_dialog_aux(path_translation) -> dict[int, dict[str, dict]]:
+    """Text the published wiki audio pages show for character dialog in place of the game data's, by CharacterId and lowercased clip path. dialog_scrape.py writes it."""
     data = {}
-    data_aux = []
+    path = os.path.join(path_translation, 'audio')
+    if not os.path.isdir(path): return data
 
-    for file in os.listdir(path_translation + '/audio/'):
-        if not file.endswith('.json') or not file.startswith('standard_'):
-            continue
-
-        #print(f'Loading additional audio translations from {path_translation}/audio/{file}')
-        with open(os.path.join(path_translation + '/audio/', file), encoding="utf8") as f:
-            data_aux += orjson.loads(f.read())['DataList']
-
-    for line in data_aux:
-        data[line['VoiceClip']] = line 
+    for file in os.listdir(path):
+        if not file.startswith('dialog_') or not file.endswith('.json'): continue
+        with open(os.path.join(path, file), encoding="utf8") as f:
+            for line in orjson.loads(f.read())['DataList']:
+                data.setdefault(line['CharacterId'], {})[line['Path'].lower()] = line
 
     return data
+
+
+# case-folded filenames must match SkillDataKey values or this will stop working
+class LazyLevelSkill(collections.abc.Mapping):
+    def __init__(self, path):
+        self.skill_path = os.path.join(path, 'LevelSkill')
+        self.files = None
+        self.skills = {}
+
+    @property
+    def index(self):
+        if self.files is None:
+            self.files = {file.removesuffix('.json').lower(): file
+                          for file in os.listdir(self.skill_path) if file.endswith('.json')}
+
+        return self.files
+
+    def __getitem__(self, key):
+        lookup = key.lower()
+        if lookup not in self.skills:
+            file = self.index[lookup]
+            with open(os.path.join(self.skill_path, file), encoding="utf8") as f:
+                skill_info = orjson.loads(f.read())
+
+            if (type(skill_info) is list): self.skills[lookup] = skill_info[0] #pre-1.35
+            elif (type(skill_info) is dict): self.skills[lookup] = skill_info
+            else:
+                print(f"ERROR - file {file} with unknown data of type {type(skill_info)}")
+                raise KeyError(key)
+
+        return self.skills[lookup]
+
+    def __contains__(self, key):
+        return key.lower() in self.index
+
+    def __iter__(self):
+        keys = []
+        for name in self.index:
+            skill = self[name]
+            keys.append(skill['SkillDataKey'] if 'SkillDataKey' in skill else skill['GroupName'])
+
+        return iter(keys)
+
+    def __len__(self):
+        return len(self.index)
 
 
 def load_levelskill(path):
-    data = {}
-    for file in os.listdir(path + '/LevelSkill/'):
-        if not file.endswith('.json'):
-            continue
-
-        with open(os.path.join(path + '/LevelSkill/', file), encoding="utf8") as f:
-            skill_info = orjson.loads(f.read())
-
-            if (type(skill_info) is list): data[skill_info[0]['GroupName']] = skill_info[0] #pre-1.35
-            elif (type(skill_info) is dict): data[skill_info['SkillDataKey']] = skill_info
-            else: print(f"ERROR - file {file} with unknown data of type {type(skill_info)}")
-
-    return data
+    return LazyLevelSkill(path)
 
 
 def load_skill_logiceffectdata(path):
@@ -537,20 +532,47 @@ def load_strategymaps(path_primary):
     return data
 
 
+# builds key list from the directory listing and parses each file the first time that stage is actually called for
+class LazyStages(collections.abc.Mapping):
+    def __init__(self, path_primary):
+        self.stage_path = os.path.join(path_primary, 'Stage')
+        self.files = None
+        self.stages = {}
+
+    @property
+    def index(self):
+        if self.files is None:
+            self.files = {}
+            for file in os.listdir(self.stage_path):
+                if not file.endswith('.json') or "newleveltest" in file:
+                    #print(f'Skipping {file} as it contains "newleveltest" in the name.')
+                    continue
+
+                self.files[file[:file.index('.')]] = file
+
+        return self.files
+
+    def __getitem__(self, key):
+        if key not in self.stages:
+            file_path = os.path.join(self.stage_path, self.index[key])
+            with open(file_path, "rb") as f:
+                self.stages[key] = orjson.loads(f.read())
+
+        return self.stages[key]
+
+    # Mapping would answer this by parsing the file, the directory listing is enough
+    def __contains__(self, key):
+        return key in self.index
+
+    def __iter__(self):
+        return iter(self.index)
+
+    def __len__(self):
+        return len(self.index)
+
+
 def load_stages(path_primary):
-    data = {}
-    stage_path = os.path.join(path_primary, 'Stage')
-
-    for file in os.listdir(stage_path):
-        if not file.endswith('.json') or "newleveltest" in file:
-            #print(f'Skipping {file} as it contains "newleveltest" in the name.')
-            continue
-
-        file_path = os.path.join(stage_path, file)
-        with open(file_path, "rb") as f:
-            data[file[:file.index('.')]] = orjson.loads(f.read())
-
-    return data
+    return LazyStages(path_primary)
 
 
 def load_bgm(path_primary, path_translation):
@@ -647,7 +669,7 @@ BlueArchiveSeasonData = collections.namedtuple(
     ['raid_season', 'world_raid_season', 'interactive_world_raid_season', 'eliminate_raid_season', 'eliminate_raid_stage', 'multi_floor_raid_season',
      'event_content_season', 'guide_mission_season',
      'time_attack_dungeon_season',
-     'shop_recruit']
+     'shop_recruit', 'shop_recruit_mileage', 'gacha_select_pickup_group']
 )
 
 def load_season_data(path):
@@ -662,4 +684,6 @@ def load_season_data(path):
         guide_mission_season=           load_generic(path, 'GuideMissionSeasonExcelTable.json'),
         time_attack_dungeon_season=     load_generic(path, 'TimeAttackDungeonSeasonManageExcelTable.json', key=None),
         shop_recruit =                  load_generic(path, 'ShopRecruitExcelTable.json'),
+        shop_recruit_mileage =          load_generic(path, 'ShopRecruitMileageExcelTable.json', key=None),
+        gacha_select_pickup_group =     load_file_grouped(path, 'GachaSelectPickupGroupExcelTable.json', 'GachaGroupId'),
     )

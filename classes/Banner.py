@@ -73,6 +73,7 @@ class Banner:
         self.direct_pay_android_shop_cash_id = banner_data.get('DirectPayAndroidShopCashId', 0)
         self.direct_pay_apple_shop_cash_id = banner_data.get('DirectPayAppleShopCashId', 0)
         self.selectable_gacha_group_id = banner_data.get('SelectAbleGachaGroupId', 0)
+        self.select_pickup_character_id = banner_data.get('SelectPickupCharacterId', [])
 
 
     def parse_date(self, date_str):
@@ -92,6 +93,11 @@ class Banner:
     @property
     def is_rerun(self):
         return self.rerun_original_id is not None
+
+    @property
+    def rerun_key(self):
+        """Runs of one banner share it: the category and InfoCharacterId, or for select recruitments, which list no InfoCharacterId, the lobby banner."""
+        return (self.category_type, tuple(self.info_character_id) or self.linked_lobby_banner_id)
     
     @property
     def wiki_featured_characters(self):
@@ -137,6 +143,8 @@ class Banner:
             case 'SelectPickupLimitedGacha':
                 return 'Encore Recruitment'
             case 'SelectPickupFesGacha':
+                if 2000 <= self.linked_lobby_banner_id < 2200:
+                    return 'Limited Dash Recruitment'
                 return 'Anniversary Archive Recruitment'
             case _:
                 return self.name_jp
@@ -149,6 +157,8 @@ class Banner:
             case 'SelectPickupLimitedGacha':
                 return 'Encore Recruitment'
             case 'SelectPickupFesGacha':
+                if 2000 <= self.linked_lobby_banner_id < 2200:
+                    return 'Limited Dash Recruitment'
                 return 'Anniversary Archive Recruitment'
             case _:
                 return self.name_en
@@ -161,6 +171,8 @@ class Banner:
             case 'SelectPickupLimitedGacha':
                 return 'Encore Recruitment'
             case 'SelectPickupFesGacha':
+                if 2000 <= self.linked_lobby_banner_id < 2200:
+                    return 'Limited Dash Recruitment'
                 return 'Anniversary Archive Recruitment'
             case _:
                 return self.name_en_global
@@ -173,6 +185,8 @@ class Banner:
             case 'SelectPickupLimitedGacha':
                 return 'Encore Recruitment'
             case 'SelectPickupFesGacha':
+                if 2000 <= self.linked_lobby_banner_id < 2200:
+                    return 'Limited Dash Recruitment'
                 return 'Anniversary Archive Recruitment'
             case _:
                 return self.name_en_global_rerun
@@ -187,6 +201,8 @@ class Banner:
     def bannercode(self):
         if self.category_type == 'SelectPickupGacha':
             code = 'Archive_'
+        elif self.category_type == 'SelectPickupFesGacha' and 2000 <= self.linked_lobby_banner_id < 2200:
+            code = 'Limited_Dash_'
         else:
             code = ','.join([x.wiki_name.replace(' ','_') for x in self.featured_characters]) + '_' 
         if not self.is_rerun:

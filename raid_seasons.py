@@ -34,6 +34,7 @@ RAIDS = {
     'EN0010':           Raid('Decagrammaton: Geburah', 'Geburah', 'Outdoors'),
     'EN0011':           Raid('Decagrammaton: Tiphareth', 'Tiphareth', 'Indoors'),
     'EN0013':           Raid('Decagrammaton: Yesod', 'Yesod', 'Urban'),
+    'EN0022':           Raid('The Library of Lore: Drumbarka', 'Drumbarka', 'Urban'),
 }
 
 SEASON_IGNORE = {
@@ -57,6 +58,10 @@ SEASON_NOTES = {
         78:'Introduction of Lunatic Difficulty',
         83: 'Revised phase 2 of the fight',
         90: 'Adjusted skills and HP for certain difficulties',
+        91: 'Earlier incoming train indication at the start of phase 1',
+        92: 'Added HP bars for each of the Kaiten\'s parts in phase 2',
+        93: 'Maximum number of held tickets increased to 6',
+        97: 'Added resetting of the battle room<br>Added restarting after losing to the battle',
     },
     'gl' : {
         2:'Beta version, no ranking rewards',
@@ -64,6 +69,9 @@ SEASON_NOTES = {
         24:'Introduction of Insane Difficulty',
         46:'Introduction of Torment Difficulty',
         73:'Introduction of Lunatic Difficulty',
+        85: 'Adjusted skills and HP for certain difficulties',
+        86: 'Earlier incoming train indication at the start of phase 1',
+        87: 'Added HP bars for each of the Kaiten\'s parts in phase 2<br>Maximum number of held tickets increased to 6',
     }
 }
 

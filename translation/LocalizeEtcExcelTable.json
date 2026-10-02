@@ -7172,7 +7172,7 @@
         {
             "Key": 268835141,
             "NameJp": "クラシック2段カート",
-            "NameEn": "Classic 2-tier Cart",
+            "NameEn": "Classic Two-Tier Cart",
             "DescriptionJp": "昼食のティータイムにも、夜のパーティーにも合うクラシックな2段カート。常に清潔な状態で貴賓たちを待つ。",
             "DescriptionEn": "A classic 2-tier cart suitable for tea time during the day or a party at night. It awaits guests in a constantly clean state."
         },
@@ -14977,7 +14977,7 @@
             "NameJp": "ミチル（ドレス）の神名文字",
             "NameEn": "Michiru's (Dress) Eleph",
             "DescriptionJp": "ミチル（ドレス）の神秘が詰まった神名文字。",
-            "DescriptionEn": "The mystical Eleph of Michiru's (Dress)."
+            "DescriptionEn": "The mystical Eleph of Michiru (Dress)."
         },
         {
             "Key": 1778162416,
@@ -15595,19 +15595,32 @@
             "DescriptionJp": "SRT学園で支給されていた低価格の歯磨き粉。キュウリのさわやかな香りが特徴だが、独特すぎて好き嫌いが大きく分かれた。多くの生徒は歯磨きではなく、装備を磨くのに使っていたという……。",
             "DescriptionEn": "An inexpensive toothpaste provided at SRT Academy. It's characterized by the fresh scent of cucumber, but this unique flavor created a strong divide in opinions. It is said that many students opted not to use it for brushing their teeth, but for polishing their equipment…"
         },
+
         {
             "Key": 3183815932,
+            "NameKr": "경로가 표시된 지도",
+            "DescriptionKr": "용의자의 이동 경로가 표시된 지도. 소축척 지도지만 주요한 길목들을 식별하기에는 충분하다.",
             "NameJp": "経路図",
-            "NameEn": "Route Map",
             "DescriptionJp": "容疑者の移動経路が記されている地図。縮尺は小さいが、主な道順は確認できる。",
-            "DescriptionEn": "A map showing the suspect's movement path. While the scale is small, the main route can be confirmed."
+            "NameTh": "แผนที่แสดงเส้นทาง",
+            "DescriptionTh": "แผนที่แสดงเส้นทางเคลื่อนไหวของผู้ต้องสงสัย แม้เป็นแผนที่มาตราย่อส่วนขนาเล็ก แต่ก็ระบุเส้นทางสำคัญได้",
+            "NameTw": "標示路徑的地圖",
+            "DescriptionTw": "標示了嫌疑犯移動路徑的地圖。雖然是小比例尺地圖，但足以辨識主要的路口。",
+            "NameEn": "Marked Map",
+            "DescriptionEn": "A map showing the suspect's route. It's a small-scale map, but it's detailed enough to identify main roads."
         },
         {
             "Key": 207833206,
+            "NameKr": "난수암호",
+            "DescriptionKr": "정체불명의 난수가 적혀 있는 메모지. 자세히 살펴보면 규칙성을 찾을 수 있을지도 모른다.",
             "NameJp": "乱数が書かれたメモ",
-            "NameEn": "Memo With Random Numbers",
             "DescriptionJp": "謎の乱数が書かれたメモ。規則性があるかもしれない。よく見て見よう。",
-            "DescriptionEn": "A memo with mysterious random numbers. There might be a pattern. Let's look closely."
+            "NameTh": "รหัสลับแบบสุ่ม",
+            "DescriptionTh": "กระดาษโน้ตที่มีตัวเลขสุ่มปริศนา หากพิจารณาอย่างละเอียดจะพบรูปแบบบางอย่าง",
+            "NameTw": "亂數密碼",
+            "DescriptionTw": "寫有來歷不明亂數的便條紙。仔細觀察的話，或許能找出規律性。",
+            "NameEn": "Random Number Cipher",
+            "DescriptionEn": "A note with a mysterious number on it. If you look closely, you may find a pattern."
         },
         {
             "Key": 2530291965,
@@ -15639,13 +15652,19 @@
         },
         {
             "Key": 3981029618,
+            "NameKr": "검표된 열차표",
+            "DescriptionKr": "이미 검표가 끝나 구멍이 뚫린 열차표 한 장. 이 표로 소유자의 행선지를 추측할 수 있다.",
             "NameJp": "使用済みの乗車券",
-            "NameEn": "Used Passage Ticket",
             "DescriptionJp": "使用済みで穴が空いている乗車券。行き先が推測できる。",
-            "DescriptionEn": "A used passage ticket with a hole punched through it. The destination can be inferred."
+            "NameTh": "ตั๋วรถไฟที่ตรวจแล้ว",
+            "DescriptionTh": "ตั๋วรถไฟหนึ่งใบที่ตรวจและเจาะรูแล้ว สามารถคาดเดาสถานที่ปลายทางของเจ้าของได้",
+            "NameTw": "已驗票的車票",
+            "DescriptionTw": "一張已驗票完畢、被打了孔的車票。憑這張票可推測持有者的目的地。",
+            "NameEn": "Punched Train Ticket",
+            "DescriptionEn": "A train ticket that has already been punched after a ticket check. You can guess the owner's destination with this ticket."
         },
 
-                {
+        {
             "Key": 1489514206,
             "NameJp": "ヴァルキューレ矯正局備品・テレビ",
             "NameEn": "Valkyrie Correctional・Television",
@@ -16037,7 +16056,7 @@
             "NameJp": "クイーンズ・ギャンビット",
             "DescriptionJp": "第2部連邦生徒会編1章3話クリア",
             "NameEn": "The Queen's Gambit",
-            "DescriptionEn": "Clear Story Part 2: Federal Student Council Arc, Chapter 1, Episode 3."
+            "DescriptionEn": "Clear Story Act 2: Federal Student Council Arc, Chapter 1, Episode 3."
         },
         {
             "Key": 3753496723,
@@ -16046,7 +16065,7 @@
             "NameJp": "小隊は腹ごしらえしてから行進する",
             "DescriptionJp": "第2部ロア追跡編1章3話クリア",
             "NameEn": "The Platoon Marches on its Stomach",
-            "DescriptionEn": "Clear Story Part 2: Lore Pursuit Arc, Chapter 1, Episode 3."
+            "DescriptionEn": "Clear Story Act 2: Lore Pursuit Arc, Chapter 1, Episode 3."
         },
         {
             "Key": 1549873212,
@@ -16183,7 +16202,1384 @@
             "DescriptionJp": "ユキノはCCゲージを保有し、累積すると周辺の敵は一定時間EXスキルを使用できなくなります。\n\nコンテナ制御装置を破壊すると特別な味方が登場してサポートします。",
             "NameEn": "Event Challenge Stage 4 Hint",
             "DescriptionEn": "Yukino possesses a CC gauge, and when accumulated, nearby enemies cannot use their EX Skills for a certain period.\n\nWhen you destroy the container control device, a special ally will appear to support you."
+        },
+        {
+            "Key": 4031209358,
+            "NameJp": "エリカの神名文字",
+            "NameEn": "Erika's Eleph",
+            "DescriptionJp": "エリカの神秘が詰まった神名文字。",
+            "DescriptionEn": "The mystical Eleph of Erika."
+        },
+        {
+            "Key": 2968309107,
+            "NameJp": "ドラム缶ガニ（市街地戦）のブロンズトロフィー",
+            "NameEn": "Drumbarka Bronze Trophy - Urban Warfare",
+            "DescriptionJp": "ドラム缶ガニ（市街地戦）の栄誉を讃えるブロンズトロフィー",
+            "DescriptionEn": "A bronze trophy from Drumbarka for Urban Warfare."
+        },
+        {
+            "Key": 3400514802,
+            "NameJp": "ドラム缶ガニ（市街地戦）のシルバートロフィー",
+            "NameEn": "Drumbarka Silver Trophy - Urban Warfare",
+            "DescriptionJp": "ドラム缶ガニ（市街地戦）の栄誉を讃えるシルバートロフィー",
+            "DescriptionEn": "A silver trophy from Drumbarka for Urban Warfare."
+        },
+        {
+            "Key": 477092186,
+            "NameJp": "ドラム缶ガニ（市街地戦）のゴールドトロフィー",
+            "NameEn": "Drumbarka Gold Trophy - Urban Warfare",
+            "DescriptionJp": "ドラム缶ガニ（市街地戦）の栄誉を讃えるゴールドトロフィー",
+            "DescriptionEn": "A gold trophy from Drumbarka for Urban Warfare."
+        },
+        {
+            "Key": 3535729589,
+            "NameJp": "ドラム缶ガニ（市街地戦）のプラチナトロフィー",
+            "NameEn": "Drumbarka Platinum Trophy - Urban Warfare",
+            "DescriptionJp": "ドラム缶ガニ（市街地戦）の栄誉を讃えるプラチナトロフィー",
+            "DescriptionEn": "A platinum trophy from Drumbarka for Urban Warfare."
+        },
+        {
+            "Key": 2379493851,
+            "NameJp": "氷河を秘めし冷蔵庫",
+            "NameEn": "Glacier Refrigerator",
+            "DescriptionJp": "冷たい飲み物がたっぷり入った冷蔵庫。開けた後は必ずドアを閉めるように。",
+            "DescriptionEn": "A refrigerator filled with ice-cold drinks. Please remember to close the door after use."
+        },
+                {
+            "Key": 93421957,
+            "NameJp": "ハルカ（ドレス）の神名文字",
+            "NameEn": "Haruka's (Dress) Eleph",
+            "DescriptionJp": "ハルカ（ドレス）の神秘が詰まった神名文字。",
+            "DescriptionEn": "The mystical Eleph of Haruka (Dress)."
+        },
+        {
+            "Key": 1989744246,
+            "NameJp": "ムツキ（ドレス）の神名文字",
+            "NameEn": "Mutsuki's (Dress) Eleph",
+            "DescriptionJp": "ムツキ（ドレス）の神秘が詰まった神名文字。",
+            "DescriptionEn": "The mystical Eleph of Mutsuki (Dress)."
+        },
+        {
+            "Key": 3692890223,
+            "NameJp": "イベントPt",
+            "NameEn": "Event Points",
+            "DescriptionJp": "イベントで入手できるポイント。たくさん手に入れることで、様々な報酬を獲得できる。",
+            "DescriptionEn": "Points obtained through events. Acquiring many allows you to get various rewards."
+        },
+        {
+            "Key": 1796767250,
+            "NameJp": "クーリングパック",
+            "NameEn": "Cooling Pack",
+            "DescriptionJp": "衝撃を加えると瞬時に冷却効果を発揮するクーリングパック。暑い夏の日の必需品。",
+            "DescriptionEn": "A cooling pack that instantly provides a cooling effect when squeezed. An essential item on hot summer days."
+        },
+        {
+            "Key": 3936351402,
+            "NameJp": "SRT小隊用レーション",
+            "NameEn": "SRT Combat Ration",
+            "DescriptionJp": "SRT学園で支給されていた小隊用レーション。熱湯を注いで待てば簡単に食事ができる。保存性が高く、SRT学園閉鎖後も時折ブラックマーケットで取引されている。",
+            "DescriptionEn": "This is a platoon ration that was issued at SRT Academy. It can be easily prepared by simply adding hot water and waiting. It has a long shelf life and is occasionally traded on the black market even after SRT Academy closed."
+        },
+        {
+            "Key": 960254150,
+            "NameJp": "キュウリ味の歯磨き粉",
+            "NameEn": "Cucumber-Flavored Toothpaste",
+            "DescriptionJp": "SRT学園で支給されていた低価格の歯磨き粉。キュウリのさわやかな香りが特徴だが、独特すぎて好き嫌いが大きく分かれた。多くの生徒は歯磨きではなく、装備を磨くのに使っていたという……。",
+            "DescriptionEn": "An inexpensive toothpaste provided at SRT Academy. It's characterized by the fresh scent of cucumber, but this unique flavor created a strong divide in opinions. It is said that many students opted not to use it for brushing their teeth, but for polishing their equipment…"
+        },
+                {
+            "Key": 2228122147,
+            "NameKr": "SRT식 설득법",
+            "DescriptionKr": "2부 로어추적 편 2장 9화 클리어",
+            "NameJp": "SRT式尋問法",
+            "DescriptionJp": "第2部ロア追跡編2章9話クリア",
+            "NameEn": "SRT-Style Interrogation Method",
+            "DescriptionEn": "Lore Pursuit Part 2 Chapter 2-9 Cleared"
+        },
+        {
+            "Key": 3856217901,
+            "NameKr": "특수작전: 로어추적 편",
+            "DescriptionKr": "2026-06-10 10:59:59까지 진행하는 특수작전: 로어추적 편 이벤트에서 획득 가능",
+            "NameJp": "特殊作戦・ロア追跡編",
+            "DescriptionJp": "2026-06-10 10:59:59まで実施される特殊作戦・ロア追跡編イベントにて獲得可能",
+            "NameEn": "Special Operation: Lore Pursuit (Season 2)",
+            "DescriptionEn": "Available from the Special Operation: Lore Pursuit event held until 2026-06-10 10:59:59"
+        },
+        {
+            "Key": 1472027894,
+            "NameKr": "이벤트 챌린지 스테이지 1 힌트",
+            "DescriptionKr": "스위퍼가 처치될 때마다 다른 방어 타입의 스위퍼가 소환됩니다.\n스위퍼와 방어 타입이 다른 적은 피해를 매우 적게 받습니다.\n\n스위퍼를 처치하여 등장한 적과 동일한 방어 타입의 스위퍼를 소환한 후 적을 처치하세요.",
+            "NameJp": "イベントチャレンジステージ1ヒント",
+            "DescriptionJp": "スイーパーが倒れる度に、他の防御タイプのスイーパーが召喚されます。\nスイーパーと防御タイプが異なる他の敵は被ダメージ量が大幅に減少します。\n\nスイーパーを倒して登場した敵と同じ防御タイプのスイーパーを召喚した後、敵を倒しましょう。",
+            "NameEn": "Event Challenge Stage 1 Hint",
+            "DescriptionEn": "Each time a Sweeper is defeated, another Sweeper with a different defense type is summoned.\nEnemies with a different defense type from the Sweeper take significantly reduced damage.\n\nDefeat the Sweeper and summon a Sweeper with the same defense type as the enemy that appears, then defeat the enemy."
+        },
+        {
+            "Key": 3165699134,
+            "NameKr": "이벤트 챌린지 스테이지 2 힌트",
+            "DescriptionKr": "보스인 하루카(드레스)의 공격 타입과 방어 타입을 고려하여 편성하세요.",
+            "NameJp": "イベントチャレンジステージ2ヒント",
+            "DescriptionJp": "ハルカ（ドレス）の攻撃タイプと防御タイプを踏まえて編成しましょう。",
+            "NameEn": "Event Challenge Stage 2 Hint",
+            "DescriptionEn": "Form your team while considering Haruka (Dress)'s attack and defense types."
+        },
+        {
+            "Key": 2899464306,
+            "NameKr": "이벤트 챌린지 스테이지 3 힌트",
+            "DescriptionKr": "적 보스는 카르파초 조직원을 이용하여 자신의 공격력과 방어력을 대폭 강화합니다.\n기절한 카르파초 조직원은 EX 스킬로 처치할 수 있습니다.\n\n카르파초 조직원을 우선적으로 처치하여 보스를 약화시킨 후 전투를 진행해 보세요.",
+            "NameJp": "イベントチャレンジステージ3ヒント",
+            "DescriptionJp": "敵ボスはカルパッチョ・ファミリー組織員を利用して自身の攻撃力と防御力を大幅に強化します。\n気絶したカルパッチョ・ファミリー組織員はEXスキルで倒すことができます。\n\n先にカルパッチョ・ファミリー組織員を倒して、ボスを弱体化してから戦闘を進めましょう。",
+            "NameEn": "Event Challenge Stage 3 Hint",
+            "DescriptionEn": "The enemy boss greatly strengthens its attack and defense by utilizing Carpaccio Family members.\nStunned Carpaccio Family members can be defeated with EX skills.\n\nFirst defeat the Carpaccio Family members to weaken the boss, then proceed with the battle."
+        },
+        {
+            "Key": 1993701024,
+            "NameKr": "이벤트 챌린지 스테이지 4 힌트",
+            "DescriptionKr": "해로운 효과 제거 스킬을 사용해 아군 쿠마봇과 우사기봇의 해로운 효과를 모두 제거하면 빙결이 해제됩니다.\n보스는 받는 대미지량이 크게 감소하지만, 보스를 공격하고 있는 쿠마봇과 우사기봇의 수에 따라 받는 대미지량이 증가합니다. (쿠마봇은 우사기봇 보다 더 큰 폭으로 보스의 받는 대미지량을 증가시킵니다.)\n\n보스는 강력한 광역 스킬과 공격력 감소 효과를 사용하니, 우사기봇과 쿠마봇을 보호하면서 해로운 효과 제거 스킬을 활용하며 전투를 진행해 보세요.",
+            "NameJp": "イベントチャレンジステージ4ヒント",
+            "DescriptionJp": "弱体状態を解除するスキルを使用して、味方くまロボとうさロボの弱体状態をすべて解除した場合、凍結が解除されます。\nボスは被ダメージ量が大幅に減少しますが、ボスを攻撃するくまロボとうさロボの数によって被ダメージ量が増加します。（くまロボは、うさロボより大幅にボスの被ダメージ量を増加させます）\n\nボスは強力な広範囲スキルと攻撃力減少効果を使用するため、くまロボとうさロボを守りながら、弱体状態解除スキルを活用しつつ、戦闘を進めましょう。",
+            "NameEn": "Event Challenge Stage 4 Hint",
+            "DescriptionEn": "If you use a skill to remove debuffs and remove all debuffs from your allied bear robots and rabbit robots, the freeze effect will be removed.\nThe boss will take significantly less damage, but the amount of damage it takes increases depending on the number of bear robots and rabbit robots attacking it.\n(Bear robots increase the amount of damage the boss takes significantly more than rabbit robots.) The boss uses powerful wide-area skills and attack reduction effects, so protect your bear robots and rabbit robots while making use of debuff removal skills as you progress through the battle."
+        },
+        {
+            "Key": 892388351,
+            "NameJp": "リコレクト・メモリー-ive aLIVE!交換チケット",
+            "NameEn": "Recollection・-ive aLIVE! Exchange Ticket",
+            "DescriptionJp": "獲得後、リコレクト・メモリー-ive aLIVE!に交換できるチケット。既に保有している場合、代わりに30,000クレジットを獲得します。",
+            "DescriptionEn": "A ticket that can be exchanged for Recollection・-ive aLIVE! machine after acquisition. If you already own it, you will receive 30,000 Credits instead."
+        },
+        {
+            "Key": 3130709227,
+            "NameKr": "드럼통 게",
+            "DescriptionKr": "(X)",
+            "NameJp": "ドラム缶ガニ",
+            "DescriptionJp": "(X)",
+            "NameEn": "Drumbarka",
+            "DescriptionEn": ""
+        },
+        {
+            "Key": 4163299294,
+            "NameKr": "드럼통 게",
+            "DescriptionKr": "(X)",
+            "NameJp": "ドラム缶ガニ",
+            "DescriptionJp": "(X)",
+            "NameEn": "Drumbarka",
+            "DescriptionEn": ""
+        },
+        {
+            "Key": 783220009,
+            "NameJp": "ナグサ（水着）の神名文字",
+            "NameEn": "Nagusa's (Swimsuit) Eleph",
+            "DescriptionJp": "ナグサ（水着）の神秘が詰まった神名文字。",
+            "DescriptionEn": "The mystical Eleph of Nagusa (Swimsuit)."
+        },
+                {
+            "Key": 3028267677,
+            "NameJp": "モデルプール",
+            "NameEn": "Model Pool",
+            "DescriptionJp": "一度見たら忘れられない絶景を再現したプール。いつでも休暇を楽しめる。",
+            "DescriptionEn": "A pool that recreates a breathtaking view you'll never forget. Enjoy a vacation anytime."
+        },
+        {
+            "Key": 1440165341,
+            "NameJp": "趣のある橋と池",
+            "NameEn": "Antique Bridge and Pond",
+            "DescriptionJp": "古風な橋がポイントの人工池。たまに、小さな友達に出会えるかもしれない。",
+            "DescriptionEn": "An artificial pond featuring an antique bridge as a highlight. You might even meet some little friends?"
+        },
+        {
+            "Key": 4161546442,
+            "NameJp": "シュン（水着）の神名文字",
+            "NameEn": "Shun's (Swimsuit) Eleph",
+            "DescriptionJp": "シュン（水着）の神秘が詰まった神名文字。",
+            "DescriptionEn": "The mystical Eleph of Shun (Swimsuit)."
+        },
+        {
+            "Key": 211216920,
+            "NameJp": "キサキ（水着）の神名文字",
+            "NameEn": "Kisaki's (Swimsuit) Eleph",
+            "DescriptionJp": "キサキ（水着）の神秘が詰まった神名文字。",
+            "DescriptionEn": "The mystical Eleph of Kisaki (Swimsuit)."
+        },
+                {
+            "Key": 4285787252,
+            "NameKr": "람과천청",
+            "DescriptionKr": "람과천청 이벤트에서 획득 가능",
+            "NameJp": "嵐過天晴",
+            "DescriptionJp": "嵐過天晴イベントにて獲得可能",
+            "NameEn": "Clear Skies After the Storm",
+            "DescriptionEn": "Obtainable in the Clear Skies After the Storm event."
+        },
+        {
+            "Key": 4095316539,
+            "NameKr": "이벤트 챌린지 스테이지 1 힌트",
+            "DescriptionKr": "키사키(수영복)이 Ex스킬을 사용할 때 마다 현룡문 부원이 나타나 전투를 지원해주며, 적들은 일정 시간 기절합니다.\n키사키(수영복)의 Ex스킬을 적절히 사용하여 전투를 진행해 보세요.",
+            "NameJp": "イベントチャレンジステージ1ヒント",
+            "DescriptionJp": "キサキ（水着）がEXスキルを使用するたびに、玄龍門の構成員が現れて戦闘をサポートします。敵は一定時間気絶します。\nキサキ（水着）のEXスキルをうまく使って、戦闘を進めましょう。",
+            "NameEn": "Event Challenge Stage 1 Hint",
+            "DescriptionEn": "Each time Kisaki (Swimsuit) uses her EX skill, members of the Genryumon group will appear to support her in battle. Enemies will be stunned for a certain period of time. Make good use of Kisaki (Swimsuit)'s EX skill to advance in battle."
+        },
+        {
+            "Key": 2534921246,
+            "NameKr": "이벤트 챌린지 스테이지 2 힌트",
+            "DescriptionKr": "슌 (수영복)이 쓰러지면 숨겨진 적이 등장합니다.\n\n적의 방어타입을 노리면서 모든 적을 처치해보세요.",
+            "NameJp": "イベントチャレンジステージ2ヒント",
+            "DescriptionJp": "シュン（水着）が倒れると、秘密の敵が登場します。\n\n敵の防御タイプに有利な攻撃タイプをあわせて、すべての敵を倒しましょう。",
+            "NameEn": "Event Challenge Stage 2 Hint",
+            "DescriptionEn": "When Shun (Swimsuit) is defeated, a secret enemy will appear. Match your attack type to the enemy's defense type and defeat all of them."
+        },
+        {
+            "Key": 1056858392,
+            "NameKr": "이벤트 챌린지 스테이지 3 힌트",
+            "DescriptionKr": "우측 상단 카메라 이동 버튼을 활용하여 전투를 진행해보세요.\n\n편성할 때, 회복 능력이 있는 스페셜 학생을 편성하거나, 스트라이커 편성 가장 좌측에 방어 능력이 좋은 학생을 편성해보세요.",
+            "NameJp": "イベントチャレンジステージ3ヒント",
+            "DescriptionJp": "右上のカメラ移動ボタンを活用して戦闘を進めましょう。\n\n回復能力のあるスペシャル生徒を編成したり、ストライカー枠の左端に防御能力の高い生徒を編成しましょう。",
+            "NameEn": "Event Challenge Stage 3 Hint",
+            "DescriptionEn": "Use the camera movement button in the top-right to help navigate the battle.\n\nWhen forming your team, include a Special student with healing abilities, or place a high-defense student in the leftmost Striker slot."
+        },
+        {
+            "Key": 209329490,
+            "NameKr": "이벤트 챌린지 스테이지 4 힌트",
+            "DescriptionKr": "보스는 아군에게 강력한 중독 지속 대미지를 주니, 회복 또는 보호막 효과를 가진 학생을 편성하여 아군을 보호하세요.\n\n보스의 치명 대미지 저항률과 치명 저항력이 매우 높은 대신, 아군은 EX 스킬을 사용할 때 마다 자신을 포함한 모든 아군의 공격력과 EX 스킬 대미지량이 증가합니다. (최대 99중첩)\n아군의 EX 스킬을 자주 사용하면서 전투를 진행해 보세요.",
+            "NameJp": "イベントチャレンジステージ4ヒント",
+            "DescriptionJp": "ボスは味方に強力な中毒系持続ダメージを与えます。回復もしくはシールド効果を持つ生徒を編成し、味方を守りましょう。\n\nボスの会心ダメージ抵抗率と会心抵抗値がとても高い代わりに、味方はEXスキルを使用するたびに、自分を含むすべての味方の攻撃力とEXスキルダメージ量が増加します。（最大99回重複）\n味方のEXスキルを使いながら、戦闘を進めましょう。",
+            "NameEn": "Event Challenge Stage 4 Hint",
+            "DescriptionEn": "The boss deals strong continuous poison damage to allies, so include students with healing or shield effects to protect your team.\n\nAlthough the boss has very high critical damage resistance and critical hit resistance, all allies gain increased Attack and EX Skill damage each time any allied student uses an EX Skill is used (up to 99 stacks).\nUse allies' EX Skills frequently during the fight."
+        },
+        {
+            "Key": 1853999145,
+            "NameJp": "フォトカードコレクション",
+            "NameEn": "Photocard Collection",
+            "DescriptionJp": "写真を持っていくと、記念のフォトカードコレクションを作ってくれるようだ。1等からハズレまで、コンプリートしてみよう。",
+            "DescriptionEn": "If you bring photos, they'll create a commemorative photo card collection for you. Let's try to collect them all, from the top prize to the consolation prize."
+        },
+        {
+            "Key": 1412138912,
+            "NameJp": "査察計画書",
+            "NameEn": "Inspection Plan",
+            "DescriptionJp": "行政手続きには書類が不可欠。たとえ、査察を装ったバカンスだとしても……。",
+            "DescriptionEn": "Documents are essential for administrative procedures, even if it's a vacation disguised as an inspection."
+        },
+        {
+            "Key": 3483202906,
+            "NameJp": "施設入場券",
+            "NameEn": "Facility Admission Ticket",
+            "DescriptionJp": "観光施設を利用するための入場券。団体割引もあってお得。",
+            "DescriptionEn": "Admission tickets for using tourist facilities. Group discounts are available, making it a great deal."
+        },
+        {
+            "Key": 2079974644,
+            "NameJp": "特産品のお菓子",
+            "NameEn": "Local Specialty Sweets",
+            "DescriptionJp": "特産品のお菓子。みんなで一緒に食べると美味しい。",
+            "DescriptionEn": "Local specialty sweets. They taste better when shared with others."
+        },
+        {
+            "Key": 626255310,
+            "NameKr": "검은 망사 스타킹",
+            "DescriptionKr": "평범하게 구할 수 있는 망사 스타킹.\n\n추억이라는 건, 의외의 물건에도 깃드는 법이다.",
+            "NameJp": "黒い網タイツ",
+            "DescriptionJp": "市販の網タイツ。\n\n思い出は意外な品に宿るものだ。",
+            "NameEn": "Black Fishnet Tights",
+            "DescriptionEn": "A pair of store-bought fishnet tights.\n\nMemories can dwell in the most unexpected things."
+        },
+        {
+            "Key": 1224763257,
+            "NameKr": "평범한 문고본",
+            "DescriptionKr": "딱히 특별한 점이라고는 없는 일반 서적.\n\n초판도, 애장판도 아닌, 특색 없는 것이었지만, 어느 날부터 좋은 커피 향이 나기 시작했다.",
+            "NameJp": "普通の文庫本",
+            "DescriptionJp": "いたって普通の文庫本。\n\n初版でも愛蔵版でもない、ごく一般的なもの。ある日からコーヒーのいい香りが漂うようになった。",
+            "NameEn": "Ordinary Paperback",
+            "DescriptionEn": "An ordinary paperback book.\n\nNeither a first print nor a collector's edition — just a completely ordinary copy. One day, however, it began to smell pleasantly of coffee."
+        },
+        {
+            "Key": 331933966,
+            "NameKr": "꽃 모양 머리핀",
+            "DescriptionKr": "아야네가 거의 언제나 하고 있는 꽃 모양 머리핀.\n\n그 수수하고 평범한 부분이, 특히 마음에 들었다는 모양이다.",
+            "NameJp": "花型ヘアピン",
+            "DescriptionJp": "アヤネがいつもつけている花形のヘアピン。\n\n素朴な部分が、特に気に入っているようだ。",
+            "NameEn": "Flower-shaped Hairpin",
+            "DescriptionEn": "Ayane always wears this flower-shaped hairpin.\n\nShe seems particularly fond of its simple design."
+        },
+        {
+            "Key": 394794167,
+            "NameKr": "호드 실내전 격파! 2026",
+            "DescriptionKr": "호드(실내전) 대결전의 모든 방어 타입을 Hard 난이도 이상으로 처치",
+            "NameJp": "ホド（屋内戦）撃破！2026",
+            "DescriptionJp": "大決戦ホド（屋内戦）の全ての防御タイプを難易度Hard以上で倒す",
+            "NameEn": "Hod (Indoors) defeated! 2026",
+            "DescriptionEn": "Defeat all defense types of Hod Indoor Warfare [[Grand Assault]] on Hard difficulty or higher."
+        },
+        {
+            "Key": 2652318107,
+            "NameKr": "호드 실내전 격파! 2026",
+            "DescriptionKr": "호드(실내전) 대결전의 모든 방어 타입을 Hardcore 난이도 이상으로 처치",
+            "NameJp": "ホド（屋内戦）撃破！2026",
+            "DescriptionJp": "大決戦ホド（屋内戦）の全ての防御タイプを難易度Hardcore以上で倒す",
+            "NameEn": "Hod (Indoors) defeated! 2026",
+            "DescriptionEn": "Defeat all defense types of Hod Indoor Warfare [[Grand Assault]] on Hardcore difficulty or higher."
+        },
+        {
+            "Key": 536822983,
+            "NameKr": "호드 실내전 격파! 2026",
+            "DescriptionKr": "호드(실내전) 대결전의 모든 방어 타입을 Extreme 난이도 이상으로 처치",
+            "NameJp": "ホド（屋内戦）撃破！2026",
+            "DescriptionJp": "大決戦ホド（屋内戦）の全ての防御タイプを難易度Extreme以上で倒す",
+            "NameEn": "Hod (Indoors) defeated! 2026",
+            "DescriptionEn": "Defeat all defense types of Hod Indoor Warfare [[Grand Assault]] on Extreme difficulty or higher."
+        },
+        {
+            "Key": 3651949768,
+            "NameKr": "호드 실내전 격파! 2026",
+            "DescriptionKr": "호드(실내전) 대결전의 모든 방어 타입을 Insane 난이도 이상으로 처치",
+            "NameJp": "ホド（屋内戦）撃破！2026",
+            "DescriptionJp": "大決戦ホド（屋内戦）の全ての防御タイプを難易度Insane以上で倒す",
+            "NameEn": "Hod (Indoors) defeated! 2026",
+            "DescriptionEn": "Defeat all defense types of Hod Indoor Warfare [[Grand Assault]] on Insane difficulty or higher."
+        },
+        {
+            "Key": 3676923538,
+            "NameJp": "鉄砂掌の稽古台",
+            "NameEn": "Iron Sand Palm Training Stand",
+            "DescriptionJp": "爪の先まで鍛え上げるための稽古台。ケガには気を付けよう。",
+            "DescriptionEn": "A training platform for honing your claws to the fullest. Be careful not to get hurt."
+        },
+        {
+            "Key": 197068937,
+            "NameJp": "山海経の秘境セット",
+            "NameEn": "Shanhaijing Secret Realm Set",
+            "DescriptionJp": "山海経の秘境には、修行のための演武場が建てられているという。",
+            "DescriptionEn": "It is said that Shanhaijing's hidden realm contains a training arena built for cultivation."
+        },
+        {
+            "Key": 1537274567,
+            "NameJp": "山海経の秘境セット",
+            "NameEn": "Shanhaijing Secret Realm Furniture"
+        },
+        {
+            "Key": 3121776939,
+            "NameJp": "稽古場の床",
+            "NameEn": "Training Arena Floor",
+            "DescriptionJp": "柔らかい砂が敷かれた稽古場の床。転んでも安全。",
+            "DescriptionEn": "A floor of the training arena covered in soft sand. It is safe even if you fall."
+        },
+        {
+            "Key": 1355453598,
+            "NameJp": "内殿の床材",
+            "NameEn": "Inner Hall Flooring",
+            "DescriptionJp": "内殿は休息と来客のための空間。使用後は必ず掃除をすること。",
+            "DescriptionEn": "The inner hall is a space for rest and receiving guests. Be sure to clean it after use."
+        },
+        {
+            "Key": 1068905084,
+            "NameJp": "内殿の装飾絨毯",
+            "NameEn": "Inner Hall Decorative Carpet",
+            "DescriptionJp": "ホコリがたまりやすいので、しっかりとお手入れしなければいけない。",
+            "DescriptionEn": "It tends to collect dust, so it needs to be cleaned thoroughly."
+        },
+        {
+            "Key": 2092665293,
+            "NameJp": "回廊の茂み",
+            "NameEn": "Covered Corridor Shrubbery",
+            "DescriptionJp": "回廊とは建物や中庭などを取り囲む廊下のこと。草が枯れないようにお世話をしている。",
+            "DescriptionEn": "A corridor surrounding buildings or courtyards, known as a covered gallery. It is carefully tended so the grass does not wither."
+        },
+        {
+            "Key": 2976892609,
+            "NameJp": "竹垣",
+            "NameEn": "Bamboo Hedge",
+            "DescriptionJp": "竹で作った生垣。火気厳禁。",
+            "DescriptionEn": "A hedge made of bamboo. Fire is strictly prohibited."
+        },
+        {
+            "Key": 2624585092,
+            "NameJp": "盆栽用の陶器",
+            "NameEn": "Bonsai Pottery",
+            "DescriptionJp": "盆栽用の陶器。水のあげすぎもよくない。",
+            "DescriptionEn": "Ceramic pot for bonsai. Overwatering is not good either."
+        },
+        {
+            "Key": 2767845940,
+            "NameJp": "趣のあるガンラック",
+            "NameEn": "Stylish Gun Rack",
+            "DescriptionJp": "銃器を安全に保管する場所。あって然るべき。",
+            "DescriptionEn": "A safe place to store firearms. It is only fitting for one to be here."
+        },
+        {
+            "Key": 1118818099,
+            "NameJp": "山海経風の石灯",
+            "NameEn": "Shanhaijing-Style Stone Lantern",
+            "DescriptionJp": "石で作った灯篭。実は中に電気灯が入っている。",
+            "DescriptionEn": "A stone lantern made of stone. In fact, it contains an electric light inside."
+        },
+        {
+            "Key": 1342987293,
+            "NameJp": "山海経風の柱",
+            "NameEn": "Shanhaijing-Style Pillar",
+            "DescriptionJp": "伝統的な造りの柱。瓦は消耗品。",
+            "DescriptionEn": "A pillar built in a traditional style. The roof tiles are consumables."
+        },
+        {
+            "Key": 847063315,
+            "NameJp": "山海経風の軒先",
+            "NameEn": "Shanhaijing-Style Eaves",
+            "DescriptionJp": "いかにも格式高そうな伝統的な軒先。",
+            "DescriptionEn": "A traditional eave that looks undeniably refined."
+        },
+        {
+            "Key": 1942343381,
+            "NameJp": "内殿の座卓",
+            "NameEn": "Inner Hall Low Table",
+            "DescriptionJp": "花瓶が置かれた座卓。花はむやみに触らないように。",
+            "DescriptionEn": "A low table with a vase placed on it. Please do not touch the flowers carelessly."
+        },
+        {
+            "Key": 3685119818,
+            "NameJp": "稽古用の的紙",
+            "NameEn": "Practice Target Paper",
+            "DescriptionJp": "稽古用の的紙。大事なのは弾着群。",
+            "DescriptionEn": "Target paper for practice. What matters most is the shot grouping."
+        },
+        {
+            "Key": 3730746751,
+            "NameJp": "梅花椿の稽古場",
+            "NameEn": "Plum Blossom Practice Area",
+            "DescriptionJp": "梅花椿は丸太の上でバランスをとる訓練の一つ。しっかりと下半身を鍛えてから挑戦すること。",
+            "DescriptionEn": "Plum Blossom is one of the balance-training exercises performed on a log. Be sure to strengthen your lower body before trying it."
+        },
+        {
+            "Key": 576479166,
+            "NameJp": "筋斗雲",
+            "NameEn": "Magical Cloud",
+            "DescriptionJp": "不思議な雲。神仙になる想像をしてみよう。",
+            "DescriptionEn": "A mysterious cloud. Try imagining yourself becoming an immortal."
+        },
+        {
+            "Key": 3738752605,
+            "NameJp": "太湖石",
+            "NameEn": "Taihu Stone",
+            "DescriptionJp": "山海経風の庭園でよく使われる造景用石材。安定感がある。",
+            "DescriptionEn": "A landscaping stone commonly used in Shanhaijing-style gardens. It has a solid, stable feel."
+        },
+        {
+            "Key": 1688931063,
+            "NameJp": "山海経風の旗",
+            "NameEn": "Shanhaijing-Style Flag",
+            "DescriptionJp": "山海経の校章が描かれた旗。",
+            "DescriptionEn": "A flag bearing Shanhaijing's school emblem."
+        },
+        {
+            "Key": 4060295958,
+            "NameJp": "山海経風の門",
+            "NameEn": "Shanhaijing-Style Gate",
+            "DescriptionJp": "伝統的な造りの門。",
+            "DescriptionEn": "A gate built in a traditional style."
+        },
+        {
+            "Key": 1873937132,
+            "NameJp": "山海経風の飾り窓",
+            "NameEn": "Shanhaijing-Style Decorative Window",
+            "DescriptionJp": "回廊に設置された飾り窓。派手ではないが美しい。",
+            "DescriptionEn": "A decorative window installed in the corridor. It is not flashy, but it is beautiful."
+        },
+        {
+            "Key": 852248101,
+            "NameJp": "演武場の門",
+            "NameEn": "Training Hall Gate",
+            "DescriptionJp": "演武場の出入り口。",
+            "DescriptionEn": "The entrance to the training hall."
+        },
+        {
+            "Key": 1395122267,
+            "NameJp": "内殿の格子窓",
+            "NameEn": "Inner Hall Lattice Window",
+            "DescriptionJp": "内殿に設置された飾り窓。日の光がよく入るらしい。",
+            "DescriptionEn": "A decorative window installed in the inner hall. It seems to let in plenty of sunlight."
+        },
+        {
+            "Key": 2164308677,
+            "NameJp": "内殿の机",
+            "NameEn": "Inner Hall Desk",
+            "DescriptionJp": "灯篭と本が積まれた机。棚の中には何があるのだろうか。",
+            "DescriptionEn": "A desk piled with lanterns and books. I wonder what is inside the shelves."
+        },
+        {
+            "Key": 527417942,
+            "NameJp": "山海経風のゲームテーブル",
+            "NameEn": "Shanhaijing-Style Game Table",
+            "DescriptionJp": "山海経独自のゲームができるという4人用テーブル。没頭しすぎには注意。",
+            "DescriptionEn": "A four-person table where you can play a game unique to Shanhaijing. Be careful not to get too absorbed."
+        },
+        {
+            "Key": 291123961,
+            "NameJp": "内殿の椅子",
+            "NameEn": "Inner Hall Chair",
+            "DescriptionJp": "お茶をたしなむための椅子。香りで心を穏やかにしよう。",
+            "DescriptionEn": "A chair for sipping tea. Let us calm our minds with its fragrance."
+        },
+        {
+            "Key": 3973575263,
+            "NameJp": "内殿の柱",
+            "NameEn": "Inner Hall Pillar",
+            "DescriptionJp": "内殿に設置された柱。赤は繫栄と慶事の象徴。",
+            "DescriptionEn": "A pillar installed in the inner hall. Red symbolizes prosperity and celebration."
+        },
+        {
+            "Key": 3553530711,
+            "NameJp": "石造りの池",
+            "NameEn": "Stone Pond",
+            "DescriptionJp": "石で作った池。どんな魚がいるのだろうか。",
+            "DescriptionEn": "A pond made of stone. I wonder what kind of fish live in it."
+        },
+        {
+            "Key": 1793079599,
+            "NameJp": "稽古用木人樁",
+            "NameEn": "Training Dummy Post",
+            "DescriptionJp": "訓練用の木杭。精神の乱れはすなわち動作の乱れ。",
+            "DescriptionEn": "A training stake for practice. A disturbed mind leads to erratic movements."
+        },
+        {
+            "Key": 3590695037,
+            "NameJp": "山水秘境",
+            "NameEn": "Mountain and Water Secret Realm",
+            "DescriptionJp": "山水秘境は山と水が美しく調和している風景のこと。心が洗われるよう。",
+            "DescriptionEn": "A landscape where mountains and water are beautifully harmonized. It feels as if the mind is washed clean."
+        },
+        {
+            "Key": 3532774298,
+            "NameJp": "稽古場の回廊床材",
+            "NameEn": "Training Arena Corridor Flooring",
+            "DescriptionJp": "回廊の石廊下。走らないように。",
+            "DescriptionEn": "The stone flooring of the corridor. Please do not run on it."
+        },
+        {
+            "Key": 159811054,
+            "NameJp": "演武場の背景",
+            "NameEn": "Training Hall Background",
+            "DescriptionJp": "演武場の背景。心の準備が必要かもしれない。",
+            "DescriptionEn": "The backdrop of the training hall. You may need to prepare yourself mentally."
+        },
+        {
+            "Key": 2829068959,
+            "NameJp": "演武場の石碑",
+            "NameEn": "Training Hall Stone Monument",
+            "DescriptionJp": "演武場の石碑。山海経の校章が刻まれている。",
+            "DescriptionEn": "The stone monument of the training hall. Shanhaijing's school emblem is engraved on it."
+        },
+        {
+            "Key": 1817827411,
+            "NameJp": "山水画の屏風",
+            "NameEn": "Landscape Painting Folding Screen",
+            "DescriptionJp": "山水画が描かれた屏風。趣のある作品。",
+            "DescriptionEn": "A folding screen painted with a landscape scene. A tasteful piece."
+        },
+        {
+            "Key": 2290838043,
+            "NameJp": "演武場の牌楼",
+            "NameEn": "Training Hall Archway",
+            "DescriptionJp": "牌楼は入口の大きな門を指す。いろいろな意味で象徴的。",
+            "DescriptionEn": "A paifang refers to a large gate at the entrance. It is symbolic in many ways."
+        },
+        {
+            "Key": 409277448,
+            "NameJp": "演武場本館",
+            "NameEn": "Training Hall Main Building",
+            "DescriptionJp": "説明は不要。さあ稽古だ！",
+            "DescriptionEn": "No explanation is needed. Now, let us train!"
+        },
+        {
+            "Key": 4001695608,
+            "NameJp": "多宝格",
+            "NameEn": "Multipurpose Display Cabinet",
+            "DescriptionJp": "貴重品やコレクションを陳列する多目的棚。セキュリティ面は少し心配。",
+            "DescriptionEn": "A versatile shelf for displaying valuables and collections. Security is a little concerning."
+        },
+        {
+            "Key": 3300618759,
+            "NameJp": "茶盤",
+            "NameEn": "Tea Table",
+            "DescriptionJp": "お茶をたしなむための4人用座卓。いろいろなお茶を吟味しよう。",
+            "DescriptionEn": "A four-person low table for enjoying tea. Let us savor various teas."
+        },
+        {
+            "Key": 768674664,
+            "NameJp": "山海経風の縁側",
+            "NameEn": "Shanhaijing-Style Veranda",
+            "DescriptionJp": "縁側は住居空間を広げ、外周部に張り出した空間のこと。いわゆるバルコニー。",
+            "DescriptionEn": "A veranda expands the living space and projects outward from the perimeter. In other words, a balcony."
+        },
+        {
+            "Key": 3827357385,
+            "NameJp": "内殿の窓",
+            "NameEn": "Inner Hall Window",
+            "DescriptionJp": "内殿に設置された窓。換気は積極的に。",
+            "DescriptionEn": "A window installed in the inner hall. Ventilation should be encouraged."
+        },
+        {
+            "Key": 599941314,
+            "NameJp": "絶景の滝",
+            "NameEn": "Scenic Waterfall",
+            "DescriptionJp": "身も心も引き締まるような滝。風邪には気を付けよう。",
+            "DescriptionEn": "A waterfall that makes both body and mind feel invigorated. Be careful not to catch a cold."
+        },
+        {
+            "Key": 3618294141,
+            "NameJp": "サーベル置き",
+            "NameEn": "Saber Stand",
+            "DescriptionJp": "サーベルの模型を置く台。\n模型だけど、まるで本物のよう。ヨーホー！",
+            "DescriptionEn": "A stand for displaying model sabers.\nIt looks almost as real as the real thing. Yo-ho!"
+        },
+        {
+            "Key": 2023463617,
+            "NameJp": "紫外線避難所",
+            "NameEn": "Survival-type UV Shelter",
+            "DescriptionJp": "ビーチで危険な紫外線を防ぐためには、パラソルと日焼け止めは必須！",
+            "DescriptionEn": "Parasols and sunscreen are essential for protection from dangerous UV rays at the beach!"
+        },
+        {
+            "Key": 1642565089,
+            "NameJp": "砂むし風呂",
+            "NameEn": "Hot Sand Bath",
+            "DescriptionJp": "温泉熱で温められた砂の入った浴槽。あつあつの砂風呂で、たまった疲れを吹き飛ばそう。",
+            "DescriptionEn": "A tub filled with sand heated with geothermal hot spring. Wash away your fatigue in a piping hot sand bath."
+        },
+        {
+            "Key": 3100730703,
+            "NameJp": "ビーチのパーティーセット",
+            "NameEn": "Beach Party Set",
+            "DescriptionJp": "ビーチのパーティーセット。派手で楽しいパーティーになりそう。",
+            "DescriptionEn": "A beach party set. It looks like it will be a flashy, fun party."
+        },
+        {
+            "Key": 709069209,
+            "NameJp": "桜の木とベンチ",
+            "NameEn": "Cherry Tree and Bench",
+            "DescriptionJp": "桜とベンチ。刹那に咲く花がとても美しい。",
+            "DescriptionEn": "Cherry blossoms and a bench. The flowers that bloom for an instant are very beautiful."
+        },
+        {
+            "Key": 975091188,
+            "NameJp": "マコト（水着）の神名文字",
+            "NameEn": "Makoto's (Swimsuit) Eleph",
+            "DescriptionJp": "マコト（水着）の神秘が詰まった神名文字。",
+            "DescriptionEn": "The mystical Eleph of Makoto (Swimsuit)."
+        },
+        {
+            "Key": 2857583343,
+            "NameJp": "サツキ（水着）の神名文字",
+            "NameEn": "Satsuki's (Swimsuit) Eleph",
+            "DescriptionJp": "サツキ（水着）の神秘が詰まった神名文字。",
+            "DescriptionEn": "The mystical Eleph of Satsuki (Swimsuit)."
+        },
+        {
+            "Key": 365205461,
+            "NameJp": "イロハ（水着）の神名文字",
+            "NameEn": "Iroha's (Swimsuit) Eleph",
+            "DescriptionJp": "イロハ（水着）の神秘が詰まった神名文字。",
+            "DescriptionEn": "The mystical Eleph of Iroha (Swimsuit)."
+        },
+        {
+            "Key": 538806173,
+            "NameJp": "イブキ（水着）の神名文字",
+            "NameEn": "Ibuki's (Swimsuit) Eleph",
+            "DescriptionJp": "イブキ（水着）の神秘が詰まった神名文字。",
+            "DescriptionEn": "The mystical Eleph of Ibuki (Swimsuit)."
+        },
+        {
+            "Key": 2276115351,
+            "NameJp": "チアキ（水着）の神名文字",
+            "NameEn": "Chiaki's (Swimsuit) Eleph",
+            "DescriptionJp": "チアキ（水着）の神秘が詰まった神名文字。",
+            "DescriptionEn": "The mystical Eleph of Chiaki (Swimsuit)."
+        },
+        {
+            "Key": 1634148326,
+            "NameKr": "산해경 비경",
+            "DescriptionKr": "(X)",
+            "NameJp": "山海経の秘境",
+            "DescriptionJp": "(X)",
+            "NameEn": "Hidden Wonders of Shanhaijing",
+            "DescriptionEn": ""
+        },
+        {
+            "Key": 2367717864,
+            "NameKr": "출항! 만마선 ~마코토 의장님의 화려한 피서~",
+            "DescriptionKr": "출항! 만마선 ~마코토 의장님의 화려한 피서~ 이벤트에서 획득 가능",
+            "NameJp": "出航！万魔船　マコト議長の華麗なる避暑",
+            "DescriptionJp": "出航！万魔船　マコト議長の華麗なる避暑イベントにて獲得可能",
+            "NameEn": "Set Sail! Man-of-Pandemonium: Chairman Makoto's Magnificent Summer Retreat",
+            "DescriptionEn": "Obtainable in the Set Sail! Man-of-Pandemonium: Chairman Makoto's Magnificent Summer Retreat event."
+        },
+        {
+            "Key": 3567219003,
+            "NameKr": "Hatsukoi",
+            "DescriptionKr": "시논의 배틀패스 시즌 3 성장CH+ 구매",
+            "NameJp": "Hatsukoi",
+            "DescriptionJp": "シノンのバトルパスシーズン3成長CH+購入",
+            "NameEn": "Hatsukoi",
+            "DescriptionEn": "Purchase Shinon's Battle Pass Season 3 Growth CH+"
+        },
+
+        {
+            "Key": 1282591725,
+            "NameJp": "夢の砂",
+            "NameEn": "Dream Sand",
+            "DescriptionJp": "眠っている人のところにたまる不思議な砂。夢から覚めた瞬間に、噓だったかのように消えてしまう。",
+            "DescriptionEn": "A mysterious sand that gathers around sleeping people. It vanishes as if it were never there the moment they wake up."
+        },
+        {
+            "Key": 1569031997,
+            "NameJp": "流れ着いたペットボトル",
+            "NameEn": "Washed-Up Plastic Bottle",
+            "DescriptionJp": "波に流されてきたゴミ。海に捨てられたプラスチックがすべて分解されるには500年かかると言われている。",
+            "DescriptionEn": "Trash washed ashore by the waves. It is said that plastic discarded into the sea takes about 500 years to fully decompose."
+        },
+        {
+            "Key": 4055095110,
+            "NameJp": "貝殻",
+            "NameEn": "Seashell",
+            "DescriptionJp": "食べたあとの殻。極限の状況では、どんなものでも利用しなければならない。",
+            "DescriptionEn": "The shell left after eating. In extreme situations, anything can be put to use."
+        },
+        {
+            "Key": 3436517252,
+            "NameJp": "石ころ",
+            "NameEn": "Sea Pebble",
+            "DescriptionJp": "ただの石ころ。海では意外と手に入らない。",
+            "DescriptionEn": "Just a pebble. It is surprisingly hard to find one at the sea."
+        },
+        {
+            "Key": 1437157854,
+            "NameJp": "女王の星",
+            "NameEn": "Queen's Star",
+            "DescriptionJp": "勝利の象徴。星を5個すべて集めると、何でも叶えてくれる「クイーンのなんでも券」が与えられるとか……？",
+            "DescriptionEn": "A symbol of victory. Rumor has it that collecting all five stars grants a 'Queen's Anything Goes Ticket' that can grant any wish..."
+        },
+        {
+            "Key": 3685108562,
+            "NameKr": "타이거샤크마루",
+            "DescriptionKr": "상어의 영혼이 깃든 천부적인 파이터. 항상 투쟁할 대상을 찾는 점에서, 마코토와 쏙 닮았다. 강적과의 싸움, 끊임없는 투쟁, 그리고 해초류에 굶주려 있다.",
+            "NameJp": "タイガーシャーク丸",
+            "DescriptionJp": "サメの魂を宿した生粋のファイター。常に戦う相手を求めるその姿は、マコトそのもの。強敵との激闘、終わりなき闘争、そして海藻への飽くなき執念を持つ。",
+            "NameEn": "Tiger Shark Maru",
+            "DescriptionEn": "A genuine fighter with the soul of a shark. The way it constantly seeks out someone to fight is just like Makoto herself. It is driven by fierce battles against powerful foes, endless struggle, and an insatiable obsession with seaweed."
+        },
+        {
+            "Key": 3820641632,
+            "NameKr": "천상천하 유아독존",
+            "DescriptionKr": "상대방이 직전 턴에 낸 선택지를 낼 확률을 0%로 만들고, 해당 선택지의 확률을 나머지 두 선택지에 균등 분배한다. 자신의 피해 보너스 대미지 배율은 변하지 않는다.",
+            "NameJp": "天上天下唯我独尊",
+            "DescriptionJp": "相手が直前のターンで選択した手を出す確率を0%にし、残りの2つの手を出す確率をそれぞれ均等に分配する。自分のダメージボーナスのダメージ倍率は変わらない。",
+            "NameEn": "Throughout heaven and earth, I alone am the honored one",
+            "DescriptionEn": "Makes the opponent's chance of playing the hand they chose on the previous turn 0%, and evenly distributes the chance of the remaining two hands between them. Your own damage bonus multiplier does not change."
+        },
+        {
+            "Key": 1124524675,
+            "NameKr": "빨간 소라게",
+            "DescriptionKr": "그냥 소라게. 이로하 머리 색깔이랑 같다는 이유로 담당하게 되었다. 정들이면 귀찮게 될 것을 알지만, 결국은 이래저래 소중하게 여기게 되었다.",
+            "NameJp": "赤ヤドカリ",
+            "DescriptionJp": "ただのヤドカリ。髪の色と同じ色という理由でイロハに世話されることになった。最初は情が移ると面倒だと言われていたが、結局なんだかんだ大切にされている。",
+            "NameEn": "Red Hermit Crab",
+            "DescriptionEn": "Just an ordinary hermit crab. It ended up in Iroha's care simply because it happened to match her hair color. At first, she insisted that getting attached would only be a hassle, but somehow, she ended up cherishing it anyway."
+        },
+        {
+            "Key": 743937787,
+            "NameKr": "제대로 하기",
+            "DescriptionKr": "이번 턴에 지거나 비기더라도 대미지를 받지 않는다.",
+            "NameJp": "しっかりと",
+            "DescriptionJp": "今回のターンが引き分け/敗北でもダメージを受けない。",
+            "NameEn": "Do It Properly",
+            "DescriptionEn": "This turn, you will not take damage even if you lose or draw."
+        },
+        {
+            "Key": 2027863597,
+            "NameKr": "꼬집이 씨",
+            "DescriptionKr": "이부키의 소중한 파트너! 소라게 중에 가장 어리고, 겁이 많아 싸움이 능숙하지 못하다. 하지만 품고 있는 잠재력은 누구보다 크다!",
+            "NameJp": "カニカニさん",
+            "DescriptionJp": "イブキの大切なパートナー！ヤドカリたちの中では最年少。とても臆病なため戦いは得意ではない。だが、秘めた才能は誰にも負けない！",
+            "NameEn": "Kanikani-san",
+            "DescriptionEn": "Ibuki's precious partner! The youngest among the hermit crabs. Timid and not much of fighter, but its hidden talent is unmatched by anyone!"
+        },
+        {
+            "Key": 18352450,
+            "NameKr": "꼬집어 줄게!",
+            "DescriptionKr": "공격력이 [c][007eff]30%[-][/c] 증가한다. (최대 중첩 [c][007eff]3회[-][/c]) 이번 턴에 승리할 경우, 코스트를 [c][007eff]1[-][/c]만큼 회복한다. 패배할 경우 중첩을 모두 잃는다.",
+            "NameJp": "カニカニさんだよ！",
+            "DescriptionJp": "攻撃力が[c][007eff]30%[-][/c]増加する。（最大[c][007eff]3回[-][/c]重複）今回のターンで勝利した場合、コストを[c][007eff]1[-][/c]分回復する。敗北した場合、重複した攻撃力はリセットされる。",
+            "NameEn": "It's Kanikani-san!",
+            "DescriptionEn": "Increase Attack by [c][007eff]30%[-][/c]. (Can stack up to [c][007eff]3 times[-][/c])\nIf you win this turn, recover [c][007eff]1[-][/c] Cost. If you lose, all stacked attack power is reset."
+        },
+        {
+            "Key": 1038647446,
+            "NameKr": "레비아탄 Z",
+            "DescriptionKr": "사츠키의 생체공학 프로젝트, 일명 레비아탄 계획으로 탄생한 궁극의 생물병기! 그 비결이란 건강한 식습관, 규칙적인 산책, 그리고 따스한 햇살이다!",
+            "NameJp": "レヴィアタンZ",
+            "DescriptionJp": "サツキの生体工学プロジェクト――通称「レヴィアタン計画」から生まれた究極の生物兵器！その秘訣は、健康的な食生活・規則正しいお散歩・そして暖かな日差し！",
+            "NameEn": "Leviathan Z",
+            "DescriptionEn": "Satsuki's bioengineering project — the so-called 'Leviathan Plan' — created the ultimate bio-weapon! Its secret is a healthy diet, regular walks, and warm sunlight!"
+        },
+        {
+            "Key": 1089612741,
+            "NameKr": "작전명 NK",
+            "DescriptionKr": "상대가 가위/바위/보를 낼 확률을 33%로 만든다. 자신의 피해 보너스 대미지 배율은 변하지 않는다.",
+            "NameJp": "作戦名NK",
+            "DescriptionJp": "相手がグー/チョキ/パーを出す確率をそれぞれ33%にする。自分のダメージボーナスの倍率は変わらない。",
+            "NameEn": "Operation NK",
+            "DescriptionEn": "Force the opponent to have a 33% chance of playing Rock, Scissors, or Paper. Your damage bonus multiplier does not change."
+        },
+        {
+            "Key": 132637474,
+            "NameKr": "블랙 돌리",
+            "DescriptionKr": "세련쟁이 소라게 씨. 남들보다 멋 부린 부분을 알아봐 주길 바라지만, 뭐가 다른 건지 도통 알 수가 없다. 오직 치아키만이 멋 낸 부분을 모두 찾아준다고.",
+            "NameJp": "ブラックドリー",
+            "DescriptionJp": "おしゃれなヤドカリさん。本人なりのこだわりに気づいてほしいらしいが、どこが違うのかはさっぱり分からない。なぜかチアキだけは、その違いを見抜くらしい。",
+            "NameEn": "Black Dolly",
+            "DescriptionEn": "A fashionable hermit crab. It wishes others would notice the touches that make it unique, but no one can tell the difference. For some reason, Chiaki is the only one who can always spot them."
+        },
+        {
+            "Key": 1017860088,
+            "NameKr": "히어로 샷",
+            "DescriptionKr": "피해량이 [c][007eff]150%[-][/c] 증가하지만, 무승부도 패배로 간주한다.",
+            "NameJp": "ヒーローショット",
+            "DescriptionJp": "ダメージ量が[c][007eff]150%[-][/c]増加するが、引き分けの場合も敗北する。",
+            "NameEn": "Hero Shot",
+            "DescriptionEn": "Damage increases by [c][007eff]150%[-][/c], but a draw also counts as a loss."
+        },
+        {
+            "Key": 3948924537,
+            "NameKr": "별무리 쨩",
+            "DescriptionKr": "(X)",
+            "NameJp": "星屑ちゃん",
+            "DescriptionJp": "(X)",
+            "NameEn": "Stardust-chan",
+            "DescriptionEn": "(X)"
+        },
+        {
+            "Key": 641038767,
+            "NameKr": "민중의 집게발",
+            "DescriptionKr": "(X)",
+            "NameJp": "民衆のハサミ",
+            "DescriptionJp": "(X)",
+            "NameEn": "People's Scissors",
+            "DescriptionEn": "(X)"
+        },
+        {
+            "Key": 1818135546,
+            "NameKr": "가재 씨",
+            "DescriptionKr": "(X)",
+            "NameJp": "ザリガニさん",
+            "DescriptionJp": "(X)",
+            "NameEn": "Crayfish-san",
+            "DescriptionEn": "(X)"
+        },
+        {
+            "Key": 2627441868,
+            "NameKr": "서러브레드",
+            "DescriptionKr": "(X)",
+            "NameJp": "サラブレッド",
+            "DescriptionJp": "(X)",
+            "NameEn": "Thoroughbred",
+            "DescriptionEn": "(X)"
+        },
+        {
+            "Key": 1322353299,
+            "NameKr": "숙청군 2호",
+            "DescriptionKr": "(X)",
+            "NameJp": "粛清君2号",
+            "DescriptionJp": "(X)",
+            "NameEn": "Purge-kun No. 2",
+            "DescriptionEn": "(X)"
+        },
+        {
+            "Key": 3093344069,
+            "NameKr": "메슈데크",
+            "DescriptionKr": "(X)",
+            "NameJp": "メスデク",
+            "DescriptionJp": "(X)",
+            "NameEn": "Mesudeku",
+            "DescriptionEn": "(X)"
+        },
+        {
+            "Key": 1779390952,
+            "NameKr": "해초류 월계수",
+            "DescriptionKr": "승리의 상징. 승자에게 월계수를 수여하는 전통은 오디세이아에서 시작했다고 알려진다. 이것도 아마 비슷한 것이다.",
+            "NameJp": "海藻でできた冠",
+            "DescriptionJp": "勝利の象徴。勝者に月桂冠を授与する伝統は、オデュッセイアに起源があると言われている。これもおそらく似たようなものだろう。",
+            "NameEn": "Seaweed Laurel Wreath",
+            "DescriptionEn": "A symbol of victory. The tradition of awarding the victor a laurel wreath is said to have originated in the Odyssey. This is probably something similar."
+        },
+        {
+            "Key": 537612354,
+            "NameKr": "또 하나의 나",
+            "DescriptionKr": "어둠의 나. 언제나 가장 가까운 곳에서 응원해 주는 믿음직한 파트너! 그저 붙어 있을 뿐인 거 같기도 하지만…….",
+            "NameJp": "もうひとりの私",
+            "DescriptionJp": "いつも一番近くで応援してくれる、頼もしいパートナー！ただくっついているだけにも見えるけど……。",
+            "NameEn": "Another Me",
+            "DescriptionEn": "A reliable partner who always cheers you on from the closest place! It might look like they're just clinging to you..."
+        },
+        {
+            "Key": 2662707979,
+            "NameKr": "만마전 스티커",
+            "DescriptionKr": "게헨나에서 가장 우수한 학생들에게 주어지는 휘장. 만마전에 가입하기 위해서는 그 무엇보다 능력을 증명해야 한다. 실력 이외에는 무엇도 기준이 되지 못한다.",
+            "NameJp": "万魔殿ステッカー",
+            "DescriptionJp": "ゲヘナの最優秀生徒に授与される徽章。万魔殿に入るためには、能力を証明しなければならない。実力のみが基準になり得る。",
+            "NameEn": "Pandemonium Sticker",
+            "DescriptionEn": "An insignia awarded to Gehenna's most outstanding students. To join the Pandemonium Society, one must prove their abilities. Merit alone serves as the standard."
+        },
+        {
+            "Key": 2083688323,
+            "NameKr": "동전 목걸이",
+            "DescriptionKr": "소라게 목에 동전 목걸이. 오래전부터 내려오는 격언이자, 무가치함을 향한 조소 섞인 비유. 하지만, 꿈은 이루어진다.",
+            "NameJp": "コインネックレス",
+            "DescriptionJp": "ヤドカリにもコインネックレス。古くから伝わることわざで、価値が分からない者への嘲笑を含んだ比喩。それでも、身に着けたヤドカリは誇らしげである。",
+            "NameEn": "Coin Necklace",
+            "DescriptionEn": "A coin necklace for a hermit crab. This is an old proverb, a metaphor that mocks those who don't understand the value of coins. Nevertheless, the hermit crabs wearing them look proud."
+        },
+        {
+            "Key": 73193444,
+            "NameKr": "모모프렌즈 반창고",
+            "DescriptionKr": "아픈 거 다 날아가라! 이번 여행을 위해, 응급의학부장이 직접 준비해 준 의료용품. 몹시 실용적이면서도 아이의 취향을 배려하고 있다.",
+            "NameJp": "モモフレンズの絆創膏",
+            "DescriptionJp": "痛いの痛いの飛んでいけー！今回の旅行のために、救急医学部長が準備した医療品。非常に実用的かつ、子供受けもいい。",
+            "NameEn": "MomoFriends Bandage",
+            "DescriptionEn": "Pain, pain, go away! These medical supplies were prepared by the chief of emergency medicine for this trip. They are highly practical and also popular with children."
+        },
+        {
+            "Key": 1356917092,
+            "NameKr": "일어날 사건은 일어난다",
+            "DescriptionKr": "2부 게헨나 편 1장 16화 클리어",
+            "NameJp": "起こるべくして起こる",
+            "DescriptionJp": "第2部ゲヘナ編1章16話クリア",
+            "NameEn": "The Inevitable Happens",
+            "DescriptionEn": "Clear Story Act 2, Gehenna Arc, Chapter 1, Episode 16."
+        },
+        {
+            "Key": 1119504101,
+            "NameKr": "우리는 불꽃이 되어",
+            "DescriptionKr": "2부 게헨나 편 2장 18화 클리어",
+            "NameJp": "炎となる私たち",
+            "DescriptionJp": "第2部ゲヘナ編2章18話クリア",
+            "NameEn": "We Light the Blaze",
+            "DescriptionEn": "Clear Story Act 2, Gehenna Arc, Chapter 2, Episode 18."
+        },
+                {
+            "Key": 1040348540,
+            "NameJp": "初級戦術教育BD （オデュッセイア）",
+            "NameEn": "Beginner Tactical Training Blu-ray (Odyssey)",
+            "DescriptionJp": "オデュッセイアの生徒の戦術活動を映像として記録した教育用BD。",
+            "DescriptionEn": "A training Blu-ray containing documentation of the Odyssey students' tactical activities."
+        },
+        {
+            "Key": 3922028509,
+            "NameJp": "中級戦術教育BD （オデュッセイア）",
+            "NameEn": "Normal Tactical Training Blu-ray (Odyssey)",
+            "DescriptionJp": "オデュッセイアの生徒の戦術活動を映像として記録した教育用BD。",
+            "DescriptionEn": "A training Blu-ray containing documentation of the Odyssey students' tactical activities."
+        },
+        {
+            "Key": 1517008117,
+            "NameJp": "上級戦術教育BD （オデュッセイア）",
+            "NameEn": "Advanced Tactical Training Blu-ray (Odyssey)",
+            "DescriptionJp": "オデュッセイアの生徒の戦術活動を映像として記録した教育用BD。",
+            "DescriptionEn": "A training Blu-ray containing documentation of the Odyssey students' tactical activities."
+        },
+        {
+            "Key": 1545055482,
+            "NameJp": "最上級戦術教育BD （オデュッセイア）",
+            "NameEn": "Superior Tactical Training Blu-ray (Odyssey)",
+            "DescriptionJp": "オデュッセイアの生徒の戦術活動を映像として記録した教育用BD。",
+            "DescriptionEn": "A training Blu-ray containing documentation of the Odyssey students' tactical activities."
+        },
+        {
+            "Key": 1666267426,
+            "NameJp": "初級技術ノート （オデュッセイア）",
+            "NameEn": "Beginner Tech Notes (Odyssey)",
+            "DescriptionJp": "オデュッセイア海洋高等学校の戦術の極意がまとめられているノート。",
+            "DescriptionEn": "Notes summarizing the core tactical secrets of Odyssey Maritime School."
+        },
+        {
+            "Key": 1747862717,
+            "NameJp": "中級技術ノート （オデュッセイア）",
+            "NameEn": "Normal Tech Notes (Odyssey)",
+            "DescriptionJp": "オデュッセイア海洋高等学校の戦術の極意がまとめられているノート。",
+            "DescriptionEn": "Notes summarizing the core tactical secrets of Odyssey Maritime School."
+        },
+        {
+            "Key": 1402230049,
+            "NameJp": "上級技術ノート （オデュッセイア）",
+            "NameEn": "Advanced Tech Notes (Odyssey)",
+            "DescriptionJp": "オデュッセイア海洋高等学校の戦術の極意がまとめられているノート。",
+            "DescriptionEn": "Notes summarizing the core tactical secrets of Odyssey Maritime School."
+        },
+        {
+            "Key": 370749418,
+            "NameJp": "最上級技術ノート （オデュッセイア）",
+            "NameEn": "Superior Tech Notes (Odyssey)",
+            "DescriptionJp": "オデュッセイア海洋高等学校の戦術の極意がまとめられているノート。",
+            "DescriptionEn": "Notes summarizing the core tactical secrets of Odyssey Maritime School."
+        },
+        {
+            "Key": 240461881,
+            "NameJp": "ココロの神名文字",
+            "NameEn": "Kokoro's Eleph",
+            "DescriptionJp": "ココロの神秘が詰まった神名文字。",
+            "DescriptionEn": "The mystical Eleph of Kokoro."
+        },
+        {
+            "Key": 2380592803,
+            "NameJp": "コトネの神名文字",
+            "NameEn": "Kotone's Eleph",
+            "DescriptionJp": "コトネの神秘が詰まった神名文字。",
+            "DescriptionEn": "The mystical Eleph of Kotone."
+        },
+        {
+            "Key": 565124304,
+            "NameJp": "ダイビングプール",
+            "NameEn": "Diving Pool",
+            "DescriptionJp": "深い水中の環境を再現するために造られた、人工のダイビングプール。揺るぎのない深い青を見つめていると、恐怖をおぼえることもある。しかし、熟練のダイバーにとってはベッドのようにくつろげる空間である。",
+            "DescriptionEn": "This artificial diving pool was made to recreate the deep underwater environment. Looking into its unwavering, rich blue inderior can sometimes be frightening. However, for experienced divers, it's a space as comfortable as a bed."
+        },
+        {
+            "Key": 193349195,
+            "NameJp": "本の山",
+            "NameEn": "Book Pile",
+            "DescriptionJp": "誰かが雑然と積み上げた本の山。何かの規則性はあるようだが、並べた本人以外には知る由もない。",
+            "DescriptionEn": "A pile of books, haphazardly stacked by someone. There seems to be some kind of pattern to it, but only the person who arranged them knows what it may be."
+        },
+        {
+            "Key": 3447151588,
+            "NameKr": "Dive into OCEAN!",
+            "DescriptionKr": "Dive into OCEAN! 이벤트에서 획득 가능",
+            "NameJp": "Dive into OCEAN！",
+            "DescriptionJp": "Dive into OCEAN！イベントにて獲得可能",
+            "NameEn": "Dive into OCEAN!",
+            "DescriptionEn": "Obtainable in the Dive into OCEAN! event."
+        },
+        {
+            "Key": 3795215314,
+            "NameJp": "酸素ボンベ",
+            "NameEn": "Oxygen Tank",
+            "DescriptionJp": "ダイビングに必要な空気がたっぷり詰まったシリンダー。潜る前の残圧確認は欠かせない。",
+            "DescriptionEn": "A cylinder filled with compressed of air, essential for diving. Checking the remaining pressure before diving is crucial."
+        },
+        {
+            "Key": 702211098,
+            "NameJp": "マウスピース",
+            "NameEn": "Mouthpiece",
+            "DescriptionJp": "シュノーケルに取りつけるマウスピース。初心者が強く噛んでしまうこともあるため、ダイビング部では常に予備を用意している。",
+            "DescriptionEn": "A mouthpiece that attaches to a snorkel. Beginners sometimes bite down hard on them, so the Diving Club always keeps spares on hand."
+        },
+        {
+            "Key": 2168533805,
+            "NameJp": "ダイビングウェイト",
+            "NameEn": "Diving Weight",
+            "DescriptionJp": "ダイビング中、中性浮力を保つために身につける重り。ダイバーの好みに合わせて、さまざまな色にコーティングされている。",
+            "DescriptionEn": "These are weights worn by divers to maintain neutral buoyancy underwater. They are coated in a variety of colors to suit the diver's preference."
+        },
+        {
+            "Key": 757618182,
+            "NameJp": "マーカーブイ",
+            "NameEn": "Marker Buoy",
+            "DescriptionJp": "潜水中に自分の位置を知らせるため、水中で展開するマーカーブイ。水面にいる人々に自分の存在を知らせることができる。",
+            "DescriptionEn": "A marker buoy deployed underwater to indicate one's position while diving. It can alert people on the surface to the diver's presence."
+        },
+        {
+            "Key": 2536316021,
+            "NameKr": "이벤트 챌린지 스테이지 1 힌트",
+            "DescriptionKr": "동작이 틀린 트라이던트 부원을 찾아 코코로의 버프를 부여해 응원해주세요.",
+            "NameJp": "イベントチャレンジステージ1ヒント",
+            "DescriptionJp": "動きがおかしいトライデントの部員を見つけ、ココロのバフを付与して応援しましょう。",
+            "NameEn": "Event Challenge Stage 1 Hint",
+            "DescriptionEn": "Find the Trident member acting strangely and apply a Kokoro buff to support them."
+        },
+        {
+            "Key": 3928371061,
+            "NameKr": "이벤트 챌린지 스테이지 2 힌트",
+            "DescriptionKr": "적 방어 타입에 맞는 공격 타입의 학생을 편성해 전투를 진행해 보세요.",
+            "NameJp": "イベントチャレンジステージ2ヒント",
+            "DescriptionJp": "敵の防御タイプに合わせた攻撃タイプの生徒を編成して、戦闘を進めましょう。",
+            "NameEn": "Event Challenge Stage 2 Hint",
+            "DescriptionEn": "Deploy students with the attack type that counters the enemy's defense type and proceed with the battle."
+        },
+        {
+            "Key": 1476886488,
+            "NameKr": "이벤트 챌린지 스테이지 3 힌트",
+            "DescriptionKr": "주기적으로 강력한 적 스위퍼가 생성됩니다. \n스위퍼를 주의하며 보스인 튼튼한 양산형 오토마타를 처치하세요.",
+            "NameJp": "イベントチャレンジステージ3ヒント",
+            "DescriptionJp": "一定時間ごとに強力なスイーパーが生成されます。\nスイーパーに注意しながら、頑丈な量産型オートマタを倒しましょう。",
+            "NameEn": "Event Challenge Stage 3 Hint",
+            "DescriptionEn": "A powerful enemy sweeper is generated at regular intervals.\nBe careful of the sweeper and defeat the sturdy mass-produced Automata boss."
+        },
+        {
+            "Key": 87738011,
+            "NameKr": "이벤트 챌린지 스테이지 4 힌트",
+            "DescriptionKr": "보스인 트라이던트 함상저격수는 주기적으로 강력한 범위 대미지의 공격 스킬을 사용합니다. \n해당 공격은 보호막을 보유한 학생에게는 약한 대미지를 입힙니다. \n트라이던트 함상 저격수의 스킬 타이밍에 맞춰 학생들에게 보호막을 부여하세요.",
+            "NameJp": "イベントチャレンジステージ4ヒント",
+            "DescriptionJp": "トライデントの艦上狙撃手は、一定時間ごとに強力な広範囲攻撃スキルを使用します。\nこの攻撃は、シールドを保有している生徒には弱いダメージしか与えられません。\nトライデントの艦上狙撃手が使うスキルのタイミングに合わせて、生徒たちにシールドを付与しましょう。",
+            "NameEn": "Event Challenge Stage 4 Hint",
+            "DescriptionEn": "The Trident shipboard sniper periodically uses a powerful area-of-effect attack skill.\nThis attack deals weak damage to students with shields.\nGrant shields to students in time with the skill timing used by the Trident shipboard sniper."
+        },
+        {
+            "Key": 1044759436,
+            "NameJp": "カスミ（水着）の神名文字",
+            "NameEn": "Kasumi's (Swimsuit) Eleph",
+            "DescriptionJp": "カスミ（水着）の神秘が詰まった神名文字。",
+            "DescriptionEn": "The mystical Eleph of Kasumi (Swimsuit)."
+        },
+        {
+            "Key": 2389589315,
+            "NameKr": "마지막 항해",
+            "DescriptionKr": "2부 오디세이아 편 1장 13화 클리어",
+            "NameJp": "最後の航海",
+            "DescriptionJp": "第2部オデュッセイア編1章13話クリア",
+            "NameEn": "The Last Voyage",
+            "DescriptionEn": "Clear Story Act 2: Odyssey Arc, Chapter 1, Episode 13."
+        },
+        {
+            "Key": 3872561135,
+            "NameJp": "機械工学作業台",
+            "NameEn": "Drafting Table",
+            "DescriptionJp": "原則を重んじるエンジニアの作業台。\n機械工学に強い関心があるようだ。",
+            "DescriptionEn": "A workbench belonging to an engineer who places great importance on principles.\nIt seems they have a strong interest in mechanical engineering."
+        },
+        {
+            "Key": 1901807731,
+            "NameJp": "化学作業台",
+            "NameEn": "Chemical Workstation",
+            "DescriptionJp": "いたずら好きなエンジニアの化学作業台。\nなぜか甘くて美味しそうな香りが漂っている。",
+            "DescriptionEn": "A mischievous engineer's chemistry workbench.\nFor some reason, a sweet, delicious aroma is wafting from it."
+        },
+        {
+            "Key": 3587860639,
+            "NameJp": "デスメタルステージ",
+            "NameEn": "Death Metal Stage",
+            "DescriptionJp": "",
+            "DescriptionEn": ""
+        },
+        {
+            "Key": 1667233181,
+            "NameJp": "研究委託掲示板",
+            "NameEn": "Research Commissioning Bulletin Board",
+            "DescriptionJp": "科学の力を必要とする人たちの問題を解決してあげよう。\nしっかり元は取れるように頑張ろう！",
+            "DescriptionEn": "Let's solve the problems of people who need the power of science. Let's make sure we get a solid return on our efforts!"
+        },
+        {
+            "Key": 1480277556,
+            "NameJp": "リコレクト・メモリー7th",
+            "NameEn": "Recollection・7th memory",
+            "DescriptionJp": "7th PVの映像を再生できる機械",
+            "DescriptionEn": "Machine that plays 6th PV video."
+        },
+                {
+            "Key": 2318549160,
+            "NameJp": "アンナの神名文字",
+            "NameEn": "Anna's Eleph",
+            "DescriptionJp": "アンナの神秘が詰まった神名文字。",
+            "DescriptionEn": "The mystical Eleph of Anna."
+        },
+        {
+            "Key": 1981454069,
+            "NameJp": "エリナの神名文字",
+            "NameEn": "Erina's Eleph",
+            "DescriptionJp": "エリナの神秘が詰まった神名文字。",
+            "DescriptionEn": "The mystical Eleph of Erina."
+        },
+        {
+            "Key": 2754036272,
+            "NameJp": "イベントPt",
+            "NameEn": "Event Points",
+            "DescriptionJp": "イベントで入手できるポイント。たくさん手に入れることで、様々な報酬を獲得できる。",
+            "DescriptionEn": "Points obtained through events. Acquiring many allows you to get various rewards."
+        },
+        {
+            "Key": 3129873588,
+            "NameJp": "銅の欠片",
+            "NameEn": "Copper Fragment",
+            "DescriptionJp": "銅85%、スズ5%、亜鉛5%、鉛5%。表面には炭酸銅の緑青が浮き出ており、断面からは酸化前の鮮やかな黄褐色の光沢が覗いている。",
+            "DescriptionEn": "85% copper, 5% tin, 5% zinc, and 5% lead. A green patina of copper carbonate has formed on the surface, while the cross section reveals the vivid yellow-brown luster of the metal before oxidation."
+        },
+        {
+            "Key": 3146977865,
+            "NameJp": "チタンの欠片",
+            "NameEn": "Titanium Fragment",
+            "DescriptionJp": "四塩化チタンをクロール法で還元したもので、チタン純度は99%を誇る。不純物として、鉄と酸素、および微量の窒素が出る。",
+            "DescriptionEn": "Produced by reducing titanium tetrachloride using the Kroll process, it boasts a titanium purity of 99%. Its impurities include iron, oxygen, and trace amounts of nitrogen."
+        },
+        {
+            "Key": 3195766908,
+            "NameJp": "ガラスの欠片",
+            "NameEn": "Glass Fragment",
+            "DescriptionJp": "二酸化ケイ素81％、三酸化ホウ素13％、酸化ナトリウム4％、酸化アルミニウム2％。熱膨張係数は低い。",
+            "DescriptionEn": "81% silicon dioxide, 13% boron trioxide, 4% sodium oxide, and 2% aluminum oxide. It has a low coefficient of thermal expansion."
+        },
+        {
+            "Key": 2461132470,
+            "NameJp": "調査ポイント",
+            "NameEn": "Investigation Points",
+            "DescriptionJp": "痕跡収集で調査を進めると獲得できるポイント。一定数を集めることで、手がかりをすぐに見つけることができる。",
+            "DescriptionEn": "Points earned by progressing through investigations in Clue Search. Collect enough to find a clue immediately."
+        },
+        {
+            "Key": 1316255374,
+            "NameJp": "手がかり交換ポイント",
+            "NameEn": "Clue Exchange Points",
+            "DescriptionJp": "手がかりをショップで販売すると獲得できる交換ポイント。他の手がかりと交換できる。",
+            "DescriptionEn": "Exchange points earned by selling clues at the shop. They can be exchanged for other clues."
+        },
+        {
+            "Key": 1776353643,
+            "NameKr": "It’s our Engine! ~183호를 탈출하라!~",
+            "DescriptionKr": "It’s our Engine! 이벤트에서 획득 가능",
+            "NameJp": "It’s our Engine!　～183号を脱出せよ！～",
+            "DescriptionJp": "It’s our Engine!　～183号を脱出せよ！～イベントにて獲得可能",
+            "NameEn": "It's our Engine! ～Escape from No. 183!～",
+            "DescriptionEn": "Obtainable in the It's our Engine! ～Escape from No. 183!～ event."
+        },
+        {
+            "Key": 1663247535,
+            "NameKr": "이벤트 챌린지 스테이지 1 힌트",
+            "DescriptionKr": "스위퍼로 만들어진 천공카드에 NIKI ANNA를 작성하세요.\\검은 스위퍼의 위치를 기억하고, EX 스킬로 공격하세요.\n허수아비를 공격하면 힌트를 확인할 수 있습니다.",
+            "NameJp": "イベントチャレンジステージ1ヒント",
+            "DescriptionJp": "スイーパーで作られたパンチカードに「NIKI ANNA」と記入しましょう。\n黒いスイーパーの位置を覚えて、EXスキルで攻撃しましょう。\nかかしを攻撃するとヒントを確認することができます。",
+            "NameEn": "Event Challenge Stage 1 Hint",
+            "DescriptionEn": "Write \"NIKI ANNA\" on the punch card made of Sweepers.\nRemember the positions of the black Sweepers and attack them with EX Skills.\nAttack the scarecrow to view a hint."
+        },
+        {
+            "Key": 2160228724,
+            "NameKr": "이벤트 챌린지 스테이지 2 힌트",
+            "DescriptionKr": "적 방어 타입에 맞는 공격 타입의 학생을 편성해 전투를 진행해 보세요.",
+            "NameJp": "イベントチャレンジステージ2ヒント",
+            "DescriptionJp": "敵の防御タイプに合わせた攻撃タイプの生徒を編成して、戦闘を進めましょう。",
+            "NameEn": "Event Challenge Stage 2 Hint",
+            "DescriptionEn": "Deploy students with the attack type that counters the enemy's defense type and proceed with the battle."
+        },
+        {
+            "Key": 2682081963,
+            "NameKr": "이벤트 챌린지 스테이지 3 힌트",
+            "DescriptionKr": "토템은 모든 대미지를 매우 적게 받지만 파괴되면 아군의 체력을 회복시켜줍니다.\n마리나는 EX 스킬 사용 중 강력한 대미지를 받으면 기절에 걸립니다. 마리나의 스킬 사용을 저지하지 못하면 미노리가 아군에게 강력한 공격을 합니다.\n 토템을 타격 횟수가 많은 스킬로 토템을 파괴해 아군을 회복시키고 강력한 EX 스킬로 마리나의 스킬 사용을 저지하세요.",
+            "NameJp": "イベントチャレンジステージ3ヒント",
+            "DescriptionJp": "トーテムは被ダメージ量が大幅に減少しますが、破壊されると味方のHPを回復します。\nマリナはEXスキル使用中に強力なダメージを受けると気絶します。マリナのスキル使用を阻止できないと、ミノリが味方に強力な攻撃を放ちます。\n打撃数の多いスキルでトーテムを破壊して味方を回復させ、強力なEXスキルでマリナのスキル使用を阻止しましょう。",
+            "NameEn": "Event Challenge Stage 3 Hint",
+            "DescriptionEn": "Totems take greatly reduced damage, but restore allied HP when destroyed.\nMarina will be stunned if she takes heavy damage while using her EX Skill. If you fail to interrupt Marina's skill, Minori will unleash a powerful attack on your allies.\nDestroy the totems with skills that hit many times to heal your allies, and use powerful EX Skills to interrupt Marina's skill."
+        },
+        {
+            "Key": 605415002,
+            "NameKr": "이벤트 챌린지 스테이지 4 힌트",
+            "DescriptionKr": "붉은 겨울 친위대를 처치하면 강화된 양산형 탱크에 받는 대미지량 증가 효과가 누적됩니다.\n광역 딜러를 사용하여 붉은 겨울 친위대를 처치하고 강화된 양산형 탱크를 처치하세요.",
+            "NameJp": "イベントチャレンジステージ4ヒント",
+            "DescriptionJp": "レッドウィンター親衛隊を倒すと、強化された量産型戦車に受けるダメージ増加効果が累積します。\n広範囲攻撃スキルを使用してレッドウィンター親衛隊を倒し、強化された量産型戦車を倒してください。",
+            "NameEn": "Event Challenge Stage 4 Hint",
+            "DescriptionEn": "Defeating Red Winter guards applies a stacking effect that increases the damage taken by the enhanced mass-produced tank.\nUse skills that attack a wide area to defeat the Red Winter guards, then take down the enhanced mass-produced tank."
+        },
+        {
+            "Key": 1033125869,
+            "NameKr": "단종 부품 복제",
+            "DescriptionKr": "세상에 없는 부품은 없습니다. 아직 만들지 않은 부품이 있을 뿐.",
+            "NameJp": "生産終了部品の複製",
+            "DescriptionJp": "この世に存在しない部品なんてありません。まだ作られていない部品があるだけです。",
+            "NameEn": "Discontinued Parts Replication",
+            "DescriptionEn": "There's no such thing as a part that doesn't exist. Some just haven't been made yet."
+        },
+        {
+            "Key": 1594401264,
+            "NameKr": "수리 요청",
+            "DescriptionKr": "고치는 건 아주 쉽습니다. 고친 다음의 일은 나중에 생각하면 됩니다.",
+            "NameJp": "修理依頼",
+            "DescriptionJp": "直すだけならとても簡単です。直した後のことは、いずれ考えましょう。",
+            "NameEn": "Repair Request",
+            "DescriptionEn": "Fixing it is easy. We can worry about what happens afterward later."
+        },
+        {
+            "Key": 2157495962,
+            "NameKr": "기술 자문",
+            "DescriptionKr": "무엇이든 물어보세요. 뭐라도 대답합니다.",
+            "NameJp": "技術相談",
+            "DescriptionJp": "何でも聞いてください。どんなことでもお答えします。",
+            "NameEn": "Technical Consultation",
+            "DescriptionEn": "Ask us anything. We'll come up with an answer."
+        },
+        {
+            "Key": 2213731587,
+            "NameKr": "설계도 제작",
+            "DescriptionKr": "설계도를 제작합니다. \"미터법\"으로요.",
+            "NameJp": "設計図作成",
+            "DescriptionJp": "設計図を作成します。もちろん「メートル法」で。",
+            "NameEn": "Blueprint Drafting",
+            "DescriptionEn": "We draw up blueprints. Using the metric system, of course."
+        },
+        {
+            "Key": 3106440326,
+            "NameKr": "화학약품 제조",
+            "DescriptionKr": "화학약품을 만들어줍시다. 요리랑 비슷하겠죠.",
+            "NameJp": "化学薬品製造",
+            "DescriptionJp": "化学薬品を作りましょう。要は料理と同じです。",
+            "NameEn": "Chemical Production",
+            "DescriptionEn": "Let's make some chemicals. It's basically the same as cooking."
+        },
+        {
+            "Key": 2987680966,
+            "NameKr": "리버스 프로그래밍",
+            "DescriptionKr": "소스코드가 없는 프로그램을 똑같이 구현해주는 프로그래밍입니다. 작동만 하면 그만입니다.",
+            "NameJp": "リバースエンジニアリング",
+            "DescriptionJp": "ソースコードがないプログラムを完全再現します。動けばそれで十分です。",
+            "NameEn": "Reverse Engineering",
+            "DescriptionEn": "We recreate programs exactly without their source code. As long as they work, that's good enough."
+        },
+        {
+            "Key": 3389658552,
+            "NameKr": "인형 눈알 붙이기",
+            "DescriptionKr": "부업의 대명사입니다. 예술적 감각을 일깨워봅시다.",
+            "NameJp": "人形の目玉貼り",
+            "DescriptionJp": "これぞ内職の代名詞。眠れる芸術センスを爆発させましょう。",
+            "NameEn": "Gluing Eyes onto Dolls",
+            "DescriptionEn": "The quintessential side job. Let's unleash your dormant artistic talent."
+        },
+        {
+            "Key": 1655699791,
+            "NameKr": "교통량 조사",
+            "DescriptionKr": "183호 앞을 지나가는 사람과 자동차의 통행량을 조사합니다. 아무것도 지나가지 않지만, 일이니까 해야합니다.",
+            "NameJp": "交通量調査",
+            "DescriptionJp": "183号前の交通量を調査します。何も通りませんが、これも仕事ですから。",
+            "NameEn": "Traffic Survey",
+            "DescriptionEn": "We count the people and cars passing in front of No. 183. Nothing ever passes by, but a job is a job."
+        },
+        {
+            "Key": 2498303248,
+            "NameKr": "메이드의 프릴 앞치마",
+            "DescriptionKr": "카린이 항상 착용하는 앞치마.\n\n메이드의 상징이라 할 수 있기에, 항상 정성 들여 관리하고 있다.",
+            "NameJp": "メイドのフリルエプロン",
+            "DescriptionJp": "カリンがいつも着用しているエプロン。\n\nメイドの象徴とも言える品のため、いつも丁寧に扱っている。",
+            "NameEn": "Maid's Frilly Apron",
+            "DescriptionEn": "The apron Karin always wears.\n\nAs it is a symbol of a maid, she takes great care to maintain it."
+        },
+        {
+            "Key": 510297897,
+            "NameKr": "오래된 마법 모자",
+            "DescriptionKr": "에리의 분신 같은 마법 모자.\n\n이 모자가 있었기에, 지금의 에리가 있을 수 있었다.",
+            "NameJp": "古い魔法の帽子",
+            "DescriptionJp": "エリの分身のような魔法の帽子。\n\nこの帽子があったからこそ、今のエリがいる。",
+            "NameEn": "Old Magic Hat",
+            "DescriptionEn": "A magician's hat that is like an extension of Eri herself.\n\nIt is thanks to this hat that Eri is who she is today."
+        },
+        {
+            "Key": 699539006,
+            "NameKr": "독서가의 방석",
+            "DescriptionKr": "시미코가 가장 좋아하는 방석.\n\n독서에 몰입하기 좋은 편한 자리를 만들기 위한 필수품이다.",
+            "NameJp": "読書家のクッション",
+            "DescriptionJp": "シミコが一番愛用しているクッション。\n\n読書の最適なお供。",
+            "NameEn": "Reader's Cushion",
+            "DescriptionEn": "Shimiko's favorite cushion.\n\nAn essential item for creating a comfortable spot to get immersed in a book."
+        },
+        {
+            "Key": 2158139198,
+            "NameKr": "엘레프 상자",
+            "DescriptionKr": "무작위 학생의 엘레프가 들어있는 상자. 현상수배 상점에서 판매하는 엘레프 중 하나를 획득할 수 있다.",
+            "NameJp": "神名文字ボックス",
+            "DescriptionJp": "ランダムな生徒の神名文字が入っている箱。指名手配ショップで販売している神名文字のうち一つを獲得することができる。",
+            "NameEn": "Eleph Box",
+            "DescriptionEn": "A box containing the Elephs of a random student. You can obtain one of the Elephs sold in the [[Shop#Bounty_Section|Bounty Shop]]."
         }
+
 
     ]
 }

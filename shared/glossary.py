@@ -39,7 +39,7 @@ CLUBS = {
             'LaborParty': 'Labor Party',
             'KnowledgeLiberationFront': 'Knowledge Liberation Front',
             'Hyakkayouran': 'Hyakkaryouran',
-            'ShinySparkleSociety': 'Shiny Sparkle Society',
+            'ShinySparkleSociety': 'Twinkle Twinkle Club', # 'Shiny Sparkle Society'
             'AbydosStudentCouncil': 'Abydos Student Council',
             'CentralControlCenter': 'CCC',
             'FreightLogisticsDepartment': 'Freight Logistics Department',
@@ -49,6 +49,8 @@ CLUBS = {
             'NicomediasTroop': 'Nicomedia\'s Troop',
             'PublishingDepartment': 'Publishing Department',
             'FoxSquad': "FOX Squad",
+            'DivingClub': 'Diving Club',
+            'Class183': 'Class No. 183',
             'EmptyClub': 'no club'
 }
 
@@ -56,3 +58,48 @@ SCHOOLS = {
     'RedWinter': 'Red Winter',
     'WildHunt': 'Wildhunt'
 }
+
+
+# Oopart families, keyed by the id of their N tier item. Each family occupies one decade of item ids,
+# N to SSR (110 Phaistos Disc Piece, 111 Broken Phaistos Disc, 112 Damaged, 113 Intact)
+OOPARTS = {
+    100: 'Nebra Sky Disk',
+    110: 'Phaistos Disc',
+    120: 'Wolfsegg Steel',
+    130: 'Nimrud Lens',
+    140: 'Mandrake',
+    150: 'Rohonc Codex',
+    160: 'Aether',
+    170: 'Antikythera Mechanism',
+    180: 'Voynich Manuscript',
+    190: 'Crystal Haniwa',
+}
+
+
+# How each word of an audio clip title - the clip filename past the character code - is capitalized in wiki file names.
+# The game capitalizes one word differently from file to file (LogIn and Login, BoxShop and Boxshop), 
+# so classes.Dialog.Clip aligns capitalization to this list.
+# Changing a spelling moves the wiki files that use the word on the next dialog.py -wiki run.
+CLIP_TITLE_WORDS = [
+    'a', 'Act', 'Awesome',
+    'b', 'Battle', 'Birthday', 'Birthday1', 'Birthday2', 'Box', 'BoxShop', 'Buffed', 'BuffSelf', 'Buy',
+    'Cafe', 'CardGame', 'Cardpickup', 'CardShop', 'Carrier', 'ClueSearch', 'Collection', 'CommonSkill', 'CommonTSASkill', 'Complete', 'Completion', 'Concentration', 'Cooking', 'CookingShop', 'Covered',
+    'Daily', 'Damage', 'Day', 'Death', 'Defeat', 'Defense', 'DiceRace', 'DrawTurn',
+    'End', 'Enter', 'Entrance', 'EventLobby', 'EventLocation', 'EventLogin', 'EventMission', 'EventShop', 'EventTreasure', 'ExSkill', 'ExSkill1', 'ExSkill2', 'ExWeapon',
+    'Facility', 'Fail', 'Failed', 'Find', 'Formation', 'Formchange',
+    'Gachaget', 'GeasGet', 'Get', 'Growup',
+    'Halloween',
+    'In', 'Interaction', 'InteractionCommonTSASkill', 'InteractionTSA', 'Item',
+    'Level', 'Lobby', 'LogIn', 'LoseBattle', 'LoseTurn', 'LoseTurnSpecial',
+    'MainScenario', 'Map', 'MatchFail', 'MatchSuccess', 'MemorialLobby', 'MiniEventBoxShop', 'MiniEventLobby', 'MiniEventLogin', 'MiniEventShop', 'Minigame', 'Mission', 'MissionDaily', 'Monolog', 'Move',
+    'NewYear', 'NoFX',
+    'Omikuji', 'Omikujipickup', 'Operation',
+    'Player',
+    'R89', 'Radio', 'Re', 'Recovery', 'Registration', 'Relationship', 'Retire', 'Retreat', 'RoundRenewal',
+    'S2', 'Season', 'Select', 'SFX', 'Shout', 'SPBuy', 'StageOpen', 'Start', 'Success', 'Summon', 'Supply',
+    'Tactic', 'TacticalAction', 'Title', 'Touch', 'Train', 'TSA',
+    'Up',
+    'Versus', 'Victory',
+    'WinBattle', 'WinTurn', 'WinTurnSpecial',
+    'Xmas',
+]
